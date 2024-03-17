@@ -1,0 +1,34 @@
+<objects>
+
+    <object name="bluetoothSettings" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeCell[@name='Bluetooth']" />
+        <android locatorType="xpath" locatorValue="//android.widget.TextView[ends-with(@resource-id, 'id/title')][@text='Bluetooth']" />
+    </object>
+
+    <object name="bluetoothSettings" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeCell[@name='Bluetooth']" />
+        <android locatorType="xpath" locatorValue="//android.widget.TextView[ends-with(@resource-id, 'id/title')][@text='Bluetooth']" />
+    </object>
+
+    <object name="bluetoothSwitch" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeSwitch[@name='Bluetooth']" />
+    </object>
+
+    <object name="exposureNotification" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeCell[@name='Exposure Notifications']" />
+    </object>
+
+    <object name="TurnOffExposureNotification" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeCell[@name='Turn Off Exposure Notifications']" />
+    </object>
+
+    <object name="confirmButton" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Turn Off and Delete Data']" />
+    </object>
+
+    <object name="TurnOnExposureNotification" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeCell[@name='Turn On Exposure Notifications']" />
+    </object>
+
+
+</objects>

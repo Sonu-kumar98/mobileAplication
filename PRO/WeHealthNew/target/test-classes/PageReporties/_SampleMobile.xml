@@ -1,0 +1,53 @@
+<objects>
+
+     <object name="signPopup" >
+		<android locatorType="xpath" locatorValue="//*[@text='Choose account for Smartprix']" />
+		<ios locatorType="xpath" locatorValue="//*[@value='Sign In to iTunes Store']" />
+	</object>
+
+	 <object name="playStorePopup" >
+		<android locatorType="xpath" locatorValue="//*[@text='Get Google Play services']" />
+		<ios locatorType="xpath" locatorValue="/" />
+	</object>
+
+	<object name="userName" >
+		<android locatorType="xpath" locatorValue="" />
+		<ios locatorType="xpath" locatorValue="//*[@value='Apple ID' or @value='example@icloud.com']"/>
+	</object>
+	<object name="password" >
+		<android locatorType="xpath" locatorValue="" />
+		<ios locatorType="xpath" locatorValue="//*[@value='Password'] or //*[@value='“Smartprix” Would Like to Send You Notifications']" />
+	</object>
+
+	<object name="okButton" >
+		<android locatorType="xpath" locatorValue="" />
+		<ios locatorType="xpath" locatorValue="	//*[@label='OK']" />
+	</object>
+
+	<object name="notificationPopup" >
+		<android locatorType="xpath" locatorValue="" />
+		<ios locatorType="xpath" locatorValue="//*[@value='“Smartprix” Would Like to Send You Notifications']" />
+	</object>
+
+	<object name="cancelNotifications" >
+		<android locatorType="xpath" locatorValue="" />
+		<ios locatorType="xpath" locatorValue="//*[@label='Don’t Allow']" />
+	</object>
+
+	<object name="navigationBar" >
+		<android locatorType="xpath" locatorValue="//*[@content-desc='Open navigation drawer']" />
+		<ios locatorType="xpath" locatorValue="//*[@label='hamburgmenu']" />
+	</object>
+
+	<object name="dynammicNavigationBar" >
+		<android locatorType="xpath" locatorValue="//*[@content-desc='{{menuName}}']" />
+		<ios locatorType="xpath" locatorValue="//*[@label='{{menuName}}']" />
+	</object>
+
+	<object name="tabletlink" >
+		<android locatorType="xpath" locatorValue="//*[@text='Tablets' and @resource-id='com.smartprix.main:id/listItemText']" />
+		<ios locatorType="xpath" locatorValue="//*[@label='Tablets']" />
+	</object>
+
+
+</objects>

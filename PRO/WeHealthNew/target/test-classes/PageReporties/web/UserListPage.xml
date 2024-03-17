@@ -1,0 +1,19 @@
+<objects>
+
+    <object name="UsersTitle" >
+        <web locatorType="xpath" locatorValue="//h1[text()='Users']" />
+    </object>
+
+    <object name="NewUserButton" >
+        <web locatorType="xpath" locatorValue="//a[@data-original-title='Create a new user']" />
+    </object>
+
+    <object name="dynamicUserLink" >
+        <web locatorType="xpath" locatorValue="//td/a[text()='{{useFullName}}']" />
+    </object>
+
+    <object name="dynamicUserDeleteLink" >
+        <web locatorType="xpath" locatorValue="//tr[td[a[text()='{{useFullName}}']]]//a[@data-original-title='Remove this user']" />
+    </object>
+
+</objects>

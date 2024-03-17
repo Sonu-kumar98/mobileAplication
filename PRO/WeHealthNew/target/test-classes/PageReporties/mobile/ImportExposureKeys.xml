@@ -1,0 +1,61 @@
+<objects>
+
+
+<!-- Android-->
+    <object name="showRoots" >
+       <android locatorType="xpath" locatorValue="//android.widget.ImageButton[@content-desc='Show roots']" />
+<!--        <android locatorType="xpath" locatorValue="//android.widget.ImageButton[@content-desc='Mostrar raízes']" />-->
+<!--        <android locatorType="xpath" locatorValue="//android.widget.ImageButton[@content-desc='Mostrar raíces']" />-->
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="oldDeviceNameOption" >
+        <android locatorType="xpath" locatorValue="//*[@resource-id='android:id/title'][@text='Moto E (4)']" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="OPEN_Option" >
+        <android locatorType="xpath" locatorValue="//*[@resource-id='com.android.documentsui:id/menu_open']" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="downloadOption" >
+        <android locatorType="xpath" locatorValue="//*[@resource-id='android:id/title'][@text='Download']" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="downloadsRootOption" >
+        <android locatorType="xpath" locatorValue="//*[@resource-id='android:id/title'][@text='Downloads']" />
+<!--        <android locatorType="xpath" locatorValue="//*[@resource-id='android:id/title'][@text='Transferências']" />-->
+<!--           <android locatorType="xpath" locatorValue="//*[@resource-id='android:id/title'][@text='Descargas']" />-->
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="fileName" >
+        <android locatorType="xpath" locatorValue="//android.widget.TextView[@resource-id='android:id/title'][@text='{{fileName}}']" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+<!-- IOS -->
+    <object name="browseButton" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeTabBar/XCUIElementTypeButton[@name='Browse']" />
+        <android locatorType="" locatorValue="" />
+    </object>
+
+    <object name="OnMyiPhonePath" >
+        <ios locatorType="xpath" locatorValue="(//XCUIElementTypeCell[@name='DOC.sidebar.item.On My iPhone']) | (//XCUIElementTypeCell[@name='On My iPhone, level 1'])" />
+        <android locatorType="" locatorValue="" />
+    </object>
+
+    <object name="Keynotepath" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeCell[@name='Keynote, Container']" />
+        <android locatorType="" locatorValue="" />
+    </object>
+
+
+    <object name="fileNameIOS" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeCell[@name='{{fileName}}, zip']" />
+        <android locatorType="" locatorValue="" />
+    </object>
+
+</objects>

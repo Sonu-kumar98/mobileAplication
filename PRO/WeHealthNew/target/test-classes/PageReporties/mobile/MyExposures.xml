@@ -1,0 +1,91 @@
+<objects>
+    <object name="MyExposuresTitle" >
+        <android locatorType="xpath" locatorValue="//*[@text='My Exposures']" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@label='My Exposures Summary']" />
+    </object>
+
+    <object name="closeButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/btn_close')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='ID_DISMISS_BUTTON']" />
+    </object>
+
+    <object name="summaryTab" >
+        <android locatorType="xpath" locatorValue="//android.widget.LinearLayout[@content-desc='Summary']" />
+        <android locatorType="xpath" locatorValue="//android.widget.LinearLayout[@content-desc='Resumen']/android.widget.TextView" />
+<!--        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='ID_EXPOSURES_TAB_SUMMARY']" />-->
+    </object>
+
+    <object name="noExposureDates" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/summary')]/*[starts-with(@content-desc, 'No Exposure on')]" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+
+    <object name="highExposureDates" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/summary')]/*[starts-with(@content-desc, 'High Exposure on')]" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="lowExposureDates" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/summary')]/*[starts-with(@content-desc, 'Low Exposure on')]" />
+<!--           <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/summary')]/*[starts-with(@content-desc, 'No hubo exposición en')]" />-->
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="exposureSummaryDurationDate" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/exposure_period')]" />
+        <ios locatorType="xpath" locatorValue="(//XCUIElementTypeStaticText[@name='ID_EXPOSURES_TAB_DAILY']/following-sibling::XCUIElementTypeStaticText)[1]" />
+    </object>
+
+    <object name="lastChecked" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/last_exposure_check')]" />
+        <ios locatorType="xpath" locatorValue="(//XCUIElementTypeStaticText[@name='ID_EXPOSURES_TAB_DAILY']/following-sibling::XCUIElementTypeStaticText)[2]" />
+    </object>
+
+    <object name="allExposureLevels" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/exposure_level')]" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+<!--    messages should be validated-->
+
+    <object name="dailyTab" >
+        <android locatorType="xpath" locatorValue="//android.widget.LinearLayout[@content-desc='Daily']" />
+<!--        <android locatorType="xpath" locatorValue="//android.widget.LinearLayout[@content-desc='Diariamente']/android.widget.TextView"/>-->
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='ID_EXPOSURES_TAB_DAILY']" />
+    </object>
+
+
+<!--    <object name="noExposureMessage" >-->
+<!--        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/title')]" />-->
+<!--        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@label='No Exposures Detected']" />-->
+<!--    </object>-->
+
+    // change by sonu Kumar
+    <object name="noExposureMessage" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/no_exposures')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@label='No Exposures Detected']" />
+    </object>
+
+    <object name="dailyMessageTitle" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/title')]" />
+        <ios locatorType="xpath" locatorValue="" />
+    </object>
+
+    <object name="highInfectiousnessTitle" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/high_infectiousness_title')]" />
+        <ios locatorType="xpath" locatorValue="" />
+    </object>
+
+    <object name="lowInfectiousnessTitle" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/low_infectiousness_title')]" />
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/low_infectiousness_title')]" />
+        <ios locatorType="xpath" locatorValue="" />
+    </object>
+
+    <object name="combinedExposure" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/tv_combined_days')]" />
+        <ios locatorType="xpath" locatorValue="" />
+    </object>
+
+</objects>

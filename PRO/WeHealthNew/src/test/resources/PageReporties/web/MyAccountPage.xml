@@ -1,0 +1,25 @@
+<objects>
+
+
+
+    <object name="MyAccountTitle" >
+        <web locatorType="xpath" locatorValue="//h1[text()='My Account']" />
+    </object>
+
+    <object name="userName" >
+        <web locatorType="xpath" locatorValue="//h6[text()='Name']/following-sibling::div" />
+    </object>
+
+    <object name="email" >
+        <web locatorType="xpath" locatorValue="//h6[text()='Email']/following-sibling::div" />
+    </object>
+
+    <object name="admin" >
+        <web locatorType="xpath" locatorValue="//h6[text()='System admin']/following-sibling::div" />
+    </object>
+
+    <object name="changePasswordLink" >
+        <web locatorType="xpath" locatorValue="//a[text()='Change password']" />
+    </object>
+
+</objects>

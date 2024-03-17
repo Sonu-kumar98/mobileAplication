@@ -1,0 +1,40 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="tests" thread-count="5">
+    <listeners>
+        <listener class-name="com.impactqa.listeners.TestNGExecutionLister" />
+    </listeners>
+<!--    <test name="TC101_LoginTest_Negative" >-->
+<!--        <parameter name="dataID" value="TC101_LoginTest_Negative"/>-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.web.TC101_LoginTest_Negative"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="TC102_GenerateCodeValidations" >
+        <parameter name="dataID" value="TC102_GenerateCodeValidations"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.impactqa.test.web.TC102_GenerateCodeValidations"/>
+        </classes>
+    </test>
+
+<!--    <test name="TC103_CheckAdminRole" >-->
+<!--        <parameter name="dataID" value="TC103_CheckAdminRole"/>-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.web.TC103_CheckAdminRole"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="TC104_CheckNonAdminRole" >-->
+<!--        <parameter name="dataID" value="TC104_CheckNonAdminRole"/>-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.web.TC104_CheckNonAdminRole"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

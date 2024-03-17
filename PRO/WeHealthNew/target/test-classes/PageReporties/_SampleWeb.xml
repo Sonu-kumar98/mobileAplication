@@ -1,0 +1,31 @@
+<objects>
+
+    <object name="searchTermTextbox" >
+        <web locatorType="id" locatorValue="searchTerm" />
+    </object>
+
+    <object name="searchContentTextbox" >
+        <web locatorType="id" locatorValue="searchContent" />
+    </object>
+
+    <object name="findButton" >
+        <web locatorType="xpath" locatorValue="//form[@id='searchTextForm']//button[starts-with(text(), 'Find')]" />
+    </object>
+
+    <object name="resultPopupHeader" >
+        <web locatorType="xpath" locatorValue="//div[@id='popUpId01']//h2" />
+    </object>
+
+    <object name="resultPopupMessage" >
+        <web locatorType="xpath" locatorValue="//div[@id='popUpId01']//div[contains(@class, 'popupResultMessage')]/p" />
+    </object>
+
+    <object name="resultPopupOkButton" >
+        <web locatorType="id" locatorValue="popupOk" />
+    </object>
+
+    <object name="resultPopupCancelButton" >
+        <web locatorType="id" locatorValue="popupCancel" />
+    </object>
+
+</objects>

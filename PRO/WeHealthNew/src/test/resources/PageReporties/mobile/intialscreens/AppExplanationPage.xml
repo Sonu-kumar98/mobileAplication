@@ -1,0 +1,56 @@
+ <objects>
+	 // change by sonu kumar
+
+	 <object name="safePrivateAnonymous" >
+		 <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id,'/app_pre_title')]"/>
+		 <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+	 </object>
+
+	<object name="covidWatchArizona"  >
+		<android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/app_title')]"/>
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+	</object>
+
+	<object name="getVaccineSupport" ><android locatorType="xpath" locatorValue="//*[@text='NEW: Get vaccine support']"/>
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+	</object>
+
+	<object name="getExposureNotification" >
+		<android locatorType="xpath" locatorValue="//*[@text='Get exposure notifications']" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+	</object>
+
+	<object name="shareCovidTestResult" >
+		<android locatorType="xpath" locatorValue="//*[@text='Share COVID-19 test results']" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+	</object>
+
+
+	<object name="getCustomRecommendation" >
+		<android locatorType="xpath" locatorValue="//*[@text='Get custom recommendations']" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+	</object>
+
+
+	<object name="stopCommunitySpread" >
+		<android locatorType="xpath" locatorValue="//*[@text='Stop community spread']" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+	</object>
+
+
+     <object name="howItWorksButton" >
+		<android locatorType="xpath" locatorValue="//android.widget.Button[ends-with(@resource-id, 'id/btn_how_it_works')]" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+	</object>
+
+	 <object name="explanationText" >
+		<android locatorType="id" locatorValue="//android.widget.TextView[ends-with(@resource-id, 'id/explanation')]" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='Together, we have the power to stop the spread of COVID-19 safely, securely, and anonymously.'] " />
+	</object>
+
+	<object name="checkPoints_NTC" >
+		<android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/checks')]/android.widget.TextView" />
+		<ios locatorType="" locatorValue="" />
+	</object>
+
+</objects>

@@ -1,0 +1,27 @@
+<objects>
+    <object name="openIntroCovidVaccinePage" >
+        <android locatorType="xpath" locatorValue="//*[@text='Add a COVID-19 Vaccine']"/>
+        <ios locatorType="xpath" locatorValue="" />
+    </object>
+
+    <object name="textFieldOne" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/step_1')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="textFieldTwo" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/step_2')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="textFieldThree" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/step_3')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="continueButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'btn_continue')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+    
+</objects>

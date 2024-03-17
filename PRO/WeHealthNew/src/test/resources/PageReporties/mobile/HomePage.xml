@@ -1,0 +1,66 @@
+<objects>
+    <object name="homePageArt" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/home_screen_art')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeImage[@name='ID_HOME_IMAGE']" />
+    </object>
+
+    <object name="homePageCurrentRegion" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/tv_region')]" />
+        <ios locatorType="xpath" locatorValue="(//XCUIElementTypeStaticText[@name='Region:']/following-sibling::XCUIElementTypeButton)[1]" />
+    </object>
+
+    <object name="menuButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/menu')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeImage[@name='ID_TAB_MENU_BUTTON']" />
+<!--        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Menu']" />-->
+    </object>
+
+// change by sonu Kumar
+
+    <object name="exposureNotificationNotEnabledError" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/banner_text')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='ID_EXPOSURE_NOTIFICATIONS_INACTIVE']" />
+    </object>
+
+    <object name="pushNotificationNotEnabledError_IOS" >
+        <android locatorType="" locatorValue="" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='ID_EXPOSURE_NOTIFICATIONS_UNAUTHORIZED']" />
+    </object>
+
+    <object name="myRiskLevelText" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/risk_level_title')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='ID_HOME_RISK_LEVEL']" />
+    </object>
+
+    <object name="myRiskLevelExpandedMessage">
+        <android locatorType="xpath" locatorValue="" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='ID_HOME_RISK_LEVEL_DESCRIPTION']" />
+    </object>
+
+    <object name="ShareDiagnosisButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/btn_tests')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeImage[@name='ID_TAB_DIAGNOSES_BUTTON']" />
+    </object>
+    <object name="ShareCovidVaccineButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/btn_vaccines')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeImage[@name='ID_TAB_DIAGNOSES_BUTTON']" />
+    </object>
+//id/btn_share_diagnosis
+<!--    <object name="ShareDiagnosisButton" >-->
+<!--        <android locatorType="id" locatorValue="gov.azdhs.covidwatch.android.demo:id/btn_tests" />-->
+<!--        <ios locatorType="xpath" locatorValue="//XCUIElementTypeImage[@name='ID_TAB_DIAGNOSES_BUTTON']" />-->
+<!--    </object>-->
+
+    <object name="nextStepsTitle" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/next_steps_title')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='Next steps for this region:']" />
+    </object>
+
+    <object name="nextStepAllText" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/next_steps')]//*[ends-with(@resource-id, 'id/next_step_text')]" />
+<!--        <ios locatorType="xpath" locatorValue="//*[starts-with(@name, 'ID_NEXT_STEP_')]" />-->
+            <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='Next steps:']/following-sibling::XCUIElementTypeButton[not(@name='ID_ALERT_NEW_FEATURE')]" />
+    </object>
+
+
+</objects>

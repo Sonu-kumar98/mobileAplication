@@ -1,0 +1,100 @@
+<objects>
+    <object name="menuList" >
+        <android locatorType="id" locatorValue="org.wehealth.exposure:id/menu_list" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="closeButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/close_button')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Dismiss']" />
+    </object>
+
+<!--    <object name="closeButton" >-->
+<!--        <android locatorType="xpath" locatorValue="gov.azdhs.covidwatch.android.demo:id/btn_close"/>-->
+<!--        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Dismiss']" />-->
+<!--    </object>-->
+
+    <object name="resetPossibleExposuresMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='[DEMO] Reset Possible Exposures']" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='DEMO, Reset Possible Exposures']" />
+    </object>
+
+    <object name="detectExposuresFromServerMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='[DEMO] Detect Exposures from Server']" />
+        <ios locatorType="xpath" locatorValue="//*[@label='DEMO, Detect Exposures from Server']" />
+    </object>
+
+    <object name="exportPossibleExposuresMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='[DEMO] Export Possible Exposures']" />
+        <ios locatorType="xpath" locatorValue="//*[@label='DEMO, Export Possible Exposures']" />
+    </object>
+
+    <object name="exportExposureKeysMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='[DEMO] Export Exposure Keys']" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='ID_DEMO_EXPORT_EXPOSURE_KEYS_BUTTON']" />
+    </object>
+
+    <object name="importExposureKeysMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='[DEMO] Import Exposure Keys']" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='ID_DEMO_IMPORT_EXPOSURE_KEYS_BUTTON']" />
+    </object>
+
+<!--    <object name="myExposuresMenu" >-->
+<!--        <android locatorType="xpath" locatorValue="//*[@text='My Exposures']" />-->
+<!--        <ios locatorType="xpath" locatorValue="//*[@label='My Exposures']" />-->
+<!--    </object>-->
+
+<!--    <object name="myExposuresMenu" >-->
+<!--        <android locatorType="xpath" locatorValue="//*[@text='Posibles exposiciones al COVID-19']" />-->
+<!--        <ios locatorType="xpath" locatorValue="//*[@label='My Exposures']" />-->
+<!--    </object>-->
+
+    <object name="myExposuresMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='My Exposures' or @text='Possíveis exposições à COVID-19' or @text='Posibles exposiciones al COVID-19']" />
+        <ios locatorType="xpath" locatorValue="//*[@label='My Exposures']" />
+    </object>
+
+// change by Sonu Kumar
+    <object name="sharedDiagnosesMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='Shared Diagnoses' or @text='Diagnóstico compartilhado' or @text='Diagnósticos compartidos']"/>
+        <ios locatorType="xpath" locatorValue="//*[@label='Past Diagnoses']" />
+    </object>
+
+    <object name="howItWorksMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='How it Works' or @text='Como funciona' or @text='Cómo funciona']"/>
+        <ios locatorType="xpath" locatorValue="//*[@label='How it Works']" />
+    </object>
+
+    <object name="settingsMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='Settings' or @text='Configurações'  or @text='Configuraciones']"/>
+        <ios locatorType="xpath" locatorValue="//*[@label='Settings']" />
+    </object>
+
+    <object name="aboutMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='About' or @text='Sobre' or @text='Sobre']"/>
+        <ios locatorType="xpath" locatorValue="//*[@label='About']" />
+    </object>
+
+    <object name="supportMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='Support']" />
+        <ios locatorType="xpath" locatorValue="//*[@label='Support']" />
+    </object>
+
+    <object name="CDC_GuidelinesMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='CDC Guidelines']" />
+        <ios locatorType="xpath" locatorValue="//*[@label='CDC Guidelines']" />
+    </object>
+
+    <object name="covidWatchWebsiteMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='Covid Watch Website']" />
+        <ios locatorType="xpath" locatorValue="//*[@label='Covid Watch Website']" />
+    </object>
+
+
+    <object name="privacyPolicyMenu" >
+        <android locatorType="xpath" locatorValue="//*[@text='Privacy Policy']" />
+        <ios locatorType="xpath" locatorValue="//*[@label='Privacy Policy']" />
+    </object>
+
+
+</objects>

@@ -1,0 +1,59 @@
+<objects>
+
+    <object name="IssueCodeTab" >
+        <web locatorType="xpath" locatorValue="//a[text()='Issue code']" />
+    </object>
+
+    <object name="IssueCodeTitle" >
+        <web locatorType="xpath" locatorValue="//h1[text()='Create verification code']" />
+    </object>
+
+    <object name="PositiveTestCheckbox" >
+        <web locatorType="xpath" locatorValue="//input[@type='radio' and @value='confirmed']" />
+    </object>
+
+    <object name="LikelyDiagnosisCheckbox" >
+        <web locatorType="xpath" locatorValue="//input[@type='radio' and @value='likely']" />
+    </object>
+
+    <object name="NegativeTestCheckbox" >
+        <web locatorType="xpath" locatorValue="//input[@type='radio' and @value='negative']" />
+    </object>
+
+    <object name="TestingDate" >
+        <web locatorType="xpath" locatorValue="//input[@type='date' and @id='test-date']" />
+    </object>
+
+    <object name="SymptomDate" >
+        <web locatorType="xpath" locatorValue="//input[@type='date' and @id='symptom-date']" />
+    </object>
+
+    <object name="submitButton" >
+        <web locatorType="id" locatorValue="submit" />
+    </object>
+
+    <object name="verificationCode" >
+        <web locatorType="id" locatorValue="code" />
+    </object>
+
+    <object name="verificationUUID" >
+        <web locatorType="id" locatorValue="uuid" />
+    </object>
+
+    <object name="resetButton" >
+        <web locatorType="id" locatorValue="reset" />
+    </object>
+
+    <object name="menuToggleButton" >
+        <web locatorType="id" locatorValue="profile-menu" />
+    </object>
+
+    <object name="menuOptions" >
+        <web locatorType="xpath" locatorValue="//*[@aria-labelledby='profile-menu']/a[@class='dropdown-item']" />
+    </object>
+
+    <object name="dynamicMenuOption" >
+        <web locatorType="xpath" locatorValue="//*[@aria-labelledby='profile-menu']/a[@class='dropdown-item'][text()='{{menuName}}']" />
+    </object>
+
+</objects>

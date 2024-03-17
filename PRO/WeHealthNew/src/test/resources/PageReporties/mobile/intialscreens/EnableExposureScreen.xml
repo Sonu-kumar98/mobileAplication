@@ -1,0 +1,48 @@
+<objects>
+
+	 <object name="enableExposureTitle" >
+		<android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/title')][normalize-space(@text)='Enable Exposure Notifications' or @text = 'Ativar Notificações de exposição']" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='Get Exposure Notifications']" />
+	</object>
+
+	<object name="pageImage" >
+		<android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/image')]" />
+		<ios locatorType="" locatorValue="" />
+	</object>
+
+	<object name="pageSubtitle" >
+		<android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/subtitle')]" />
+		<ios locatorType="" locatorValue="" />
+	</object>
+
+	<object name="enableButton" >
+		<android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/enable_button')]" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Enable']" />
+	</object>
+
+	<object name="notNowButton" >
+		<android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/not_now_button')]" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Not Now']" />
+	</object>
+
+	<object name="alertPopupTitle" >
+		<android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/alertTitle')]"/>
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='Enable COVID-19 Exposure Logging and Notifications']" />
+	</object>
+
+	<object name="alertPopupMessage" >
+		<android locatorType="id" locatorValue="android:id/message" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='Your iPhone can securely collect and share random IDs with nearby devices. The app can use these IDs to notify you if you may have been exposed to COVID-19. The date, duration and signal strength of an exposure will be shared with “Covid Watch”.']" />
+	</object>
+
+	<object name="alertPopupTurnOnButton" >
+		<android locatorType="xpath" locatorValue="//*[@resource-id='android:id/button1'][@text='Turn on' or @text = 'Activar' or @text = 'Ativar']"/>
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Enable']" />
+	</object>
+
+	<object name="alertPopupCancelButton" >
+		<android locatorType="xpath" locatorValue="//*[@resource-id='android:id/button2'][@text='Cancel']" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Don’t Enable']" />
+	</object>
+
+</objects>

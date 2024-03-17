@@ -1,0 +1,24 @@
+<objects>
+
+    <object name="realmTitle" >
+        <web locatorType="xpath" locatorValue="//h1[text()='Select your realm']" />
+    </object>
+
+    <object name="ARIZONA_Realm_link" >
+        <web locatorType="xpath" locatorValue="//h5[normalize-space(text()[1])='ARIZONA']" />
+    </object>
+
+    <object name="ARIZONA_Demo_Realm_link" >
+        <web locatorType="xpath" locatorValue="//h5[normalize-space(text()[1])='ARIZONA-DEMO']" />
+    </object>
+
+    <object name="BERMUDA_Realm_link" >
+        <web locatorType="xpath" locatorValue="//h5[normalize-space(text()[1])='BERMUDA']" />
+    </object>
+
+    <object name="BERMUDA_Demo_Realm_link" >
+        <web locatorType="xpath" locatorValue="//h5[normalize-space(text()[1])='BERMUDA-DEMO']" />
+    </object>
+
+
+</objects>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="false" thread-count="5">
+
+<!--    <test name="TC001_UninstallAllWeHealth_Android" >-->
+<!--        <parameter name="platFormName" value="android"/>-->
+<!--        <parameter name="appFileName" value="app-calibration-arizona-debug.apk"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.mobile.TC001_UninstallAllWeHealth"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="TC002_FreshInstallPositiveCase_Android" >-->
+<!--        <parameter name="dataID" value="TC003_FreshInstallNegativeCase_Android"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.mobile.TC003_FreshInstallNegativeCase"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="TC003_FreshInstallNegativeCase_Android" >
+        <parameter name="dataID" value="TC003_FreshInstallNegativeCase_Android"/>
+        <classes>
+            <class name="com.impactqa.test.mobile.TC003_FreshInstallNegativeCase"/>
+        </classes>
+    </test>
+
+<!--    <test name="TC004_AnonymouslySharePositiveDiagnosis_Android" >-->
+<!--        <parameter name="dataID" value="TC004_AnonymouslySharePositiveDiagnosis_Android"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.mobile.TC004_AnonymouslySharePositiveDiagnosis"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!---->
+
+<!--        <test name="TC005_AnonymouslySharePositiveDiagnosis_Android" >-->
+<!--            <parameter name="dataID" value="TC005_SharePositiveDiagnosisWithPortalDateConflict_Android"/>-->
+<!--            <classes>-->
+<!--                <class name="com.impactqa.test.mobile.TC005_SharePositiveDiagnosisWithPortalDateConflict"/>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+
+<!--    <test name="TC006_CheckExposureNotification_New_Exposure_low" >-->
+<!--    <parameter name="dataID" value="TC006_CheckExposureNotification_Low"/>-->
+<!--    <classes>-->
+<!--        <class name="com.impactqa.test.mobile.TC006_CheckExposureNotification_New2"/>-->
+<!--    </classes>-->
+<!--</test>-->
+
+<!--    <test name="TC006_CheckExposureNotification_New_Exposure_High" >-->
+<!--        <parameter name="dataID" value="TC006_CheckExposureNotification_High"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.mobile.TC006_CheckExposureNotification_New2"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="TC008_LanguageSetting" >-->
+<!--        <parameter name="dataID" value="TC008_LanguageSetting"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.mobile.TC008_LanguageSetting"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--   <test name="TC007_MobileAppSettings" >-->
+<!--        <parameter name="dataID" value="TC007_MobileAppSettings"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.mobile.TC007_MobileAppSettings"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="TC008_LanguageSetting_Low_Exposure" >-->
+<!--    <parameter name="dataID" value="TC008_LanguageSetting_Low_Exposure"/>-->
+<!--    <classes>-->
+<!--        <class name="com.impactqa.test.mobile.TC008_LanguageSetting_Low_Exposure"/>-->
+<!--    </classes>-->
+<!--</test>-->
+
+<!--    <test name="TC0010_Add_Vaccine" >-->
+<!--        <parameter name="dataID" value="TC0010_Add_Vaccine"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.mobile.TC0010_Add_Vaccine"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

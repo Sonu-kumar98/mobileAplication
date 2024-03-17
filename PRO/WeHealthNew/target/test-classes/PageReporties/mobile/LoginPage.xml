@@ -1,0 +1,22 @@
+<objects>
+    <object name="loginTitle" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/home_screen_art')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeImage[@name='Love Earth']" />
+    </object>
+
+    <object name="userNameTextbox" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/menu')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeImage[@name='MenuButtonID']" />
+    </object>
+
+    <object name="passwordTextbox" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/info_banner')][contains(@text,'Exposure notifications must be enabled for the app to work. Tap to review your app settings.')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='unauthorized' or @name='Exposure Notifications are disabled.']" />
+    </object>
+
+    <object name="submitButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/home_screen_art')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeImage[@name='Love Earth']" />
+    </object>
+
+</objects>

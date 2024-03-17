@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="30516" started-at="2024-03-17T07:58:19Z" finished-at="2024-03-17T07:58:49Z">
+    <groups>
+    </groups>
+    <test name="TC003_FreshInstallNegativeCase_Android" duration-ms="30516" started-at="2024-03-17T07:58:19Z" finished-at="2024-03-17T07:58:49Z">
+      <class name="com.impactqa.test.mobile.TC003_FreshInstallNegativeCase">
+        <test-method status="PASS" signature="getTestData(java.lang.String)[pri:0, instance:com.impactqa.test.mobile.TC003_FreshInstallNegativeCase@2424686b]" name="getTestData" is-config="true" duration-ms="1046" started-at="2024-03-17T13:28:19Z" finished-at="2024-03-17T13:28:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC003_FreshInstallNegativeCase_Android]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestData -->
+        <test-method status="PASS" signature="unInstallAllApp()[pri:0, instance:com.impactqa.test.mobile.TC003_FreshInstallNegativeCase@2424686b]" name="unInstallAllApp" duration-ms="11891" started-at="2024-03-17T13:28:20Z" description="Uninstall All App" finished-at="2024-03-17T13:28:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unInstallAllApp -->
+        <test-method status="PASS" signature="installApp()[pri:0, instance:com.impactqa.test.mobile.TC003_FreshInstallNegativeCase@2424686b]" name="installApp" duration-ms="5563" started-at="2024-03-17T13:28:33Z" description="Install Main App" depends-on-methods="com.impactqa.test.mobile.TC003_FreshInstallNegativeCase.unInstallAllApp" finished-at="2024-03-17T13:28:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- installApp -->
+        <test-method status="PASS" signature="verifyGettingStartedPage()[pri:0, instance:com.impactqa.test.mobile.TC003_FreshInstallNegativeCase@2424686b]" name="verifyGettingStartedPage" duration-ms="1890" started-at="2024-03-17T13:28:39Z" description="Verify Getting Started Page" depends-on-methods="com.impactqa.test.mobile.TC003_FreshInstallNegativeCase.installApp" finished-at="2024-03-17T13:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGettingStartedPage -->
+        <test-method status="PASS" signature="verifyIntroductionPage()[pri:0, instance:com.impactqa.test.mobile.TC003_FreshInstallNegativeCase@2424686b]" name="verifyIntroductionPage" duration-ms="547" started-at="2024-03-17T13:28:42Z" description="Verify App Introduction Page" depends-on-methods="com.impactqa.test.mobile.TC003_FreshInstallNegativeCase.verifyGettingStartedPage" finished-at="2024-03-17T13:28:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIntroductionPage -->
+        <test-method status="PASS" signature="verifyHowItWorksPage()[pri:0, instance:com.impactqa.test.mobile.TC003_FreshInstallNegativeCase@2424686b]" name="verifyHowItWorksPage" duration-ms="3766" started-at="2024-03-17T13:28:43Z" description="Verify How It Works" depends-on-methods="com.impactqa.test.mobile.TC003_FreshInstallNegativeCase.verifyIntroductionPage" finished-at="2024-03-17T13:28:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHowItWorksPage -->
+        <test-method status="PASS" signature="dontAllowExposureNotification()[pri:0, instance:com.impactqa.test.mobile.TC003_FreshInstallNegativeCase@2424686b]" name="dontAllowExposureNotification" duration-ms="469" started-at="2024-03-17T13:28:47Z" description="Don&#039;t Allow Exposure Notification" depends-on-methods="com.impactqa.test.mobile.TC003_FreshInstallNegativeCase.verifyHowItWorksPage" finished-at="2024-03-17T13:28:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dontAllowExposureNotification -->
+        <test-method status="PASS" signature="dontAllowPushNotification()[pri:0, instance:com.impactqa.test.mobile.TC003_FreshInstallNegativeCase@2424686b]" name="dontAllowPushNotification" duration-ms="16" started-at="2024-03-17T13:28:48Z" description="Don&#039;t Allow Push Notification" depends-on-methods="com.impactqa.test.mobile.TC003_FreshInstallNegativeCase.dontAllowExposureNotification" finished-at="2024-03-17T13:28:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dontAllowPushNotification -->
+        <test-method status="PASS" signature="teardownDriverInstance()[pri:0, instance:com.impactqa.test.mobile.TC003_FreshInstallNegativeCase@2424686b]" name="teardownDriverInstance" is-config="true" duration-ms="453" started-at="2024-03-17T13:28:49Z" description="close the mobile session" finished-at="2024-03-17T13:28:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownDriverInstance -->
+      </class> <!-- com.impactqa.test.mobile.TC003_FreshInstallNegativeCase -->
+    </test> <!-- TC003_FreshInstallNegativeCase_Android -->
+  </suite> <!-- Suite -->
+</testng-results>

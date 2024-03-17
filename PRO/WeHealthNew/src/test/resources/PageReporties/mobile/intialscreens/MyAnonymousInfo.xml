@@ -1,0 +1,34 @@
+<objects>
+    <object name="congratulationPage" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/subtitle')]"/>
+        <ios locatorType="xpath" locatorValue="" />
+    </object>
+
+    <object name="myAnonymousInfo" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/btn_view_anon_info')]"/>
+        <ios locatorType="xpath" locatorValue="" />
+    </object>
+
+   // we have need to add some assertion in my info page.
+
+    <object name="dragDoseOneVaccineInfo" >
+        <android locatorType="xpath" locatorValue=""/>
+        <ios locatorType="xpath" locatorValue="" />
+    </object>
+
+    <object name="dragDoseTwoVaccineInfo" >
+        <android locatorType="xpath" locatorValue=""/>
+        <ios locatorType="xpath" locatorValue="" />
+    </object>
+
+    <object name="closeMyAnonymousInfoPage" >
+        <android locatorType="xpath" locatorValue=""/>
+        <ios locatorType="xpath" locatorValue="" />
+    </object>
+
+    <object name="" >
+        <android locatorType="xpath" locatorValue=""/>
+        <ios locatorType="xpath" locatorValue="" />
+    </object>
+
+</objects>

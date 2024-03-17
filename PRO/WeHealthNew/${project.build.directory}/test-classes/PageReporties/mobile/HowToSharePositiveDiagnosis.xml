@@ -1,0 +1,32 @@
+<objects>
+<!--    <object name="howToSharePositiveDiagPageTitle" >-->
+<!--        <android locatorType="id" locatorValue="gov.azdhs.covidwatch.android.demo:id/share_positive_diagnosis_button" />-->
+<!--        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@label='How to Share a Positive Diagnosis']" />-->
+<!--    </object>-->
+
+    <object name="howToSharePositiveDiagPageTitle" >
+        <android locatorType="xpath" locatorValue= "//*[ends-with(@resource-id, 'id/share_positive_diagnosis_button')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@label='How to Share a Positive Diagnosis']" />
+    </object>
+
+    <object name="closeButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/close_button')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Dismiss']" />
+    </object>
+
+    <object name="howToSharePositiveDiagAllSteps" >
+        <android locatorType="xpath" locatorValue="//*[starts-with(@resource-id, 'org.wehealth.exposure:id/step_')]" />
+        <ios locatorType="" locatorValue="//XCUIElementTypeStaticText[starts-with(@name, 'ID_HOW_TO_SHARE_DESCRIPTION')]" />
+    </object>
+
+    <object name="whereisMyCodeButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/btn_code_explanation')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='ID_WHERE_IS_MY_CODE_BUTTON']" />
+    </object>
+
+    <object name="sharePositiveDiagnosisButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/share_positive_diagnosis_button')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='ID_CONTINUE_BUTTON']" />
+    </object>
+
+</objects>

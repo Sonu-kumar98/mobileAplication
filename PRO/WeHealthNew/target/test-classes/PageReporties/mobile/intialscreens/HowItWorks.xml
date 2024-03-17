@@ -1,0 +1,33 @@
+<objects>
+
+	<object name="nextButton" >
+		<android locatorType="xpath" locatorValue="//android.widget.ImageView[ends-with(@resource-id, 'id/btn_next_onboarding_screen')]" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Next']" />
+	</object>
+
+	 <object name="SlideTitle" >
+		<android locatorType="xpath" locatorValue="//android.widget.TextView[ends-with(@resource-id, 'id/title')]" />
+		<ios locatorType="" locatorValue="" />
+	</object>
+
+	<object name="SlideImage" >
+		<android locatorType="xpath" locatorValue="//android.widget.ImageView[ends-with(@resource-id, 'id/image')]" />
+		<ios locatorType="" locatorValue="" />
+	</object>
+
+	<object name="SlideSubtitle" >
+		<android locatorType="xpath" locatorValue="//android.widget.TextView[ends-with(@resource-id, 'id/subtitle')]" />
+		<ios locatorType="" locatorValue="" />
+	</object>
+
+	<object name="continueSetupButton" >
+		<android locatorType="xpath" locatorValue="//android.widget.Button[ends-with(@resource-id, 'id/continue_setup_button')]" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Continue Setup']" />
+	</object>
+
+	<object name="finishButton" >
+		<android locatorType="xpath" locatorValue="//android.widget.Button[ends-with(@resource-id, 'id/continue_setup_button')][@text='Finish']" />
+		<ios locatorType="" locatorValue="" />
+	</object>
+
+</objects>

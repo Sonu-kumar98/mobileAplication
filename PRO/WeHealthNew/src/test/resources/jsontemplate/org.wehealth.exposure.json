@@ -1,0 +1,596 @@
+[
+  {
+    "id": 4,
+    "name": "Residents",
+    "isDisabled": false,
+    "recentExposureDays": 14,
+    "exposureConfiguration": {
+      "attenuationDurationThresholds": [
+        50,
+        70
+      ],
+      "minimumRiskScore": 64,
+      "transmissionRiskLevelValues": [
+        0,
+        0,
+        0,
+        2,
+        4,
+        5,
+        8,
+        0
+      ],
+      "daysSinceLastExposureLevelValues": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "attenuationLevelValues": [
+        0,
+        2,
+        2,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "durationLevelValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "riskModelConfiguration": {
+      "excludeDaysRelativeToPossibleInfectedDay": [
+        0,
+        1
+      ],
+      "doseResponseLambda": 0.0000031,
+      "attenuationDurationWeights": [
+        2.39,
+        0.6,
+        0.06
+      ],
+      "significantRiskLevelValueThreshold": 0.0,
+      "riskLevelsForDaysRelativeToSymptomsStartDay": {
+        "0": 6,
+        "1": 6,
+        "2": 6,
+        "3": 5,
+        "4": 4,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1,
+        "-3": 4,
+        "-4": 3,
+        "-5": 1,
+        "-1": 6,
+        "-2": 5
+      },
+      "transmissionRiskValuesForLevels": [
+        0,
+        10,
+        21.5443469,
+        31.6227766,
+        46.4158883,
+        68.1292069,
+        100,
+        100
+      ],
+      "discountSchedule": [
+        1,
+        0.99998,
+        0.994059,
+        0.9497885,
+        0.858806,
+        0.755134,
+        0.660103392,
+        0.586894919,
+        0.533407703,
+        0.494373128,
+        0.463039432,
+        0.438587189,
+        0.416241392,
+        0.393207216,
+        0.367287169,
+        0.340932595,
+        0.313997176,
+        0.286927378,
+        0.265554932,
+        0.240765331,
+        0.217746365,
+        0.201059905,
+        0.185435372,
+        0.172969757,
+        0.156689676,
+        0.141405162,
+        0.124388311,
+        0.108319101,
+        0.094752304,
+        0.081300662,
+        0.070016527,
+        0.056302622,
+        0.044703284,
+        0.036214683,
+        0.030309399,
+        0.024554527,
+        0.018833743,
+        0.014769669
+      ],
+      "riskLevelsForDaysRelativeToTestDay": {
+        "-4": 1,
+        "3": 2,
+        "-2": 3,
+        "4": 1,
+        "0": 4,
+        "-3": 2,
+        "1": 4,
+        "-1": 4,
+        "2": 3
+      },
+      "lowExposureDuration": 300,
+      "highExposureDuration": 1200,
+      "attenuationBuckets": [
+        50,
+        60,
+        70
+      ],
+      "attenuationWeights": [
+        2,
+        1.03,
+        0.5,
+        0.0
+      ],
+      "infectiousnessWeights": {
+        "0": 0,
+        "1": 0.5,
+        "2": 1.5
+      },
+      "reportTypeWeights": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "keysBeforeSymptomsOnset": 4,
+      "keysAfterSymptomsOnset": 5,
+      "keysBeforeTestDate": 2,
+      "keysAfterTestDate": 2
+    },
+    "diagnosisKeysDataMapping": {
+      "daysSinceOnsetToInfectiousness": {
+        "0": 2,
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "-14": 0,
+        "-13": 0,
+        "-12": 0,
+        "-11": 0,
+        "-10": 0,
+        "-9": 0,
+        "-8": 0,
+        "-7": 0,
+        "-6": 1,
+        "-5": 1,
+        "-4": 1,
+        "-3": 1,
+        "-2": 2,
+        "-1": 2
+      },
+      "infectiousnessWithoutOnset": 1,
+      "defaultReportType": 1
+    },
+    "serverConfiguration": {
+      "verificationApiKey": "MStuNDiHdEY6jtl6vdVQlIkOnr3RPgYomgLjQb7/089T+3qa29V/FAR9xvp1FbeKHocXwqw2lAtkE7pVIES/rg",
+      "verificationUrl": "https://verification.api.wehealth.org",
+      "tekUploadUrl": "https://exposure.api.wehealth.org",
+      "tekDownloadIndexUrl": "https://exposure.wehealth.org/exposureKeyExport-BM/index.txt",
+      "tekDownloadBaseUrl": "https://exposure.wehealth.org"
+    },
+    "nextStepsNoSignificantExposure": [
+      {
+        "type": 0,
+        "description": "With notifications ON, the app will continue to detect possible COVID-19 exposures, even when closed."
+      },
+      {
+        "type": 2,
+        "url": "https://c.wehealth.org/3s67l39",
+        "description": "Learn more about the COVID-19 vaccine in Bermuda."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/3qBAW3M",
+        "description": "Learn how to stay safe during the pandemic."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/39QwlVr",
+        "description": "View Bermuda's latest COVID-19 guidelines."
+      }
+    ],
+    "nextStepsLowExposure": [
+      {
+        "type": 0,
+        "description": "The exposure was not near enough for long enough to recommend quarantine."
+      },
+      {
+        "type": 2,
+        "url": "https://c.wehealth.org/3bigfox",
+        "description": "Learn more about the COVID-19 vaccine in Bermuda."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/39RVUW8",
+        "description": "Learn how to stay safe during the pandemic."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/3gpsnEG",
+        "description": "View Bermuda's latest COVID-19 guidelines."
+      }
+    ],
+    "nextStepsSignificantExposure": [
+      {
+        "type": 0,
+        "description": "Please stay at home and self quarantine until DAYS_FROM_EXPOSURE{LATEST,14,FALSE}."
+      },
+      {
+        "type": 2,
+        "url": "https://c.wehealth.org/3bnlweq",
+        "description": "If you have symptoms, please continue to stay home, away from others."
+      },
+      {
+        "type": 1,
+        "url": "tel:1-441-278-6501",
+        "description": "Please contact our Case Management team immediately on (441) 278-6501."
+      },
+      {
+        "type": 2,
+        "url": "mailto:covid19casemanagement@gov.bm",
+        "description": "You can also contact Case Management at covid19casemanagement@gov.bm"
+      }
+    ],
+    "nextStepsVerifiedPositive": [
+      {
+        "type": 0,
+        "description": "Please follow the guidelines your Case Manager has given you."
+      },
+      {
+        "type": 2,
+        "url": "https://c.wehealth.org/2JMt6nw",
+        "description": "Learn more about the WeHealth Bermuda App."
+      }
+    ],
+    "nextStepsVerificationCode": [
+      {
+        "type": 2,
+        "url": "https://c.wehealth.org/3qPvef0",
+        "description": "Should you test positive for COVID-19, a Case Manager can issue you a code."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Visitors",
+    "isDisabled": false,
+    "recentExposureDays": 14,
+    "exposureConfiguration": {
+      "attenuationDurationThresholds": [
+        50,
+        70
+      ],
+      "minimumRiskScore": 64,
+      "transmissionRiskLevelValues": [
+        0,
+        0,
+        0,
+        2,
+        4,
+        5,
+        8,
+        0
+      ],
+      "daysSinceLastExposureLevelValues": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "attenuationLevelValues": [
+        0,
+        2,
+        2,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "durationLevelValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "riskModelConfiguration": {
+      "excludeDaysRelativeToPossibleInfectedDay": [
+        0,
+        1
+      ],
+      "doseResponseLambda": 0.0000031,
+      "attenuationDurationWeights": [
+        2.39,
+        0.6,
+        0.06
+      ],
+      "significantRiskLevelValueThreshold": 0.0,
+      "riskLevelsForDaysRelativeToSymptomsStartDay": {
+        "0": 6,
+        "1": 6,
+        "2": 6,
+        "3": 5,
+        "4": 4,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1,
+        "-3": 4,
+        "-4": 3,
+        "-5": 1,
+        "-1": 6,
+        "-2": 5
+      },
+      "transmissionRiskValuesForLevels": [
+        0,
+        10,
+        21.5443469,
+        31.6227766,
+        46.4158883,
+        68.1292069,
+        100,
+        100
+      ],
+      "discountSchedule": [
+        1,
+        0.99998,
+        0.994059,
+        0.9497885,
+        0.858806,
+        0.755134,
+        0.660103392,
+        0.586894919,
+        0.533407703,
+        0.494373128,
+        0.463039432,
+        0.438587189,
+        0.416241392,
+        0.393207216,
+        0.367287169,
+        0.340932595,
+        0.313997176,
+        0.286927378,
+        0.265554932,
+        0.240765331,
+        0.217746365,
+        0.201059905,
+        0.185435372,
+        0.172969757,
+        0.156689676,
+        0.141405162,
+        0.124388311,
+        0.108319101,
+        0.094752304,
+        0.081300662,
+        0.070016527,
+        0.056302622,
+        0.044703284,
+        0.036214683,
+        0.030309399,
+        0.024554527,
+        0.018833743,
+        0.014769669
+      ],
+      "riskLevelsForDaysRelativeToTestDay": {
+        "-4": 1,
+        "3": 2,
+        "-2": 3,
+        "4": 1,
+        "0": 4,
+        "-3": 2,
+        "1": 4,
+        "-1": 4,
+        "2": 3
+      },
+      "lowExposureDuration": 300,
+      "highExposureDuration": 1200,
+      "attenuationBuckets": [
+        50,
+        60,
+        70
+      ],
+      "attenuationWeights": [
+        2,
+        1.03,
+        0.5,
+        0.0
+      ],
+      "infectiousnessWeights": {
+        "0": 0,
+        "1": 0.5,
+        "2": 1.5
+      },
+      "reportTypeWeights": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "keysBeforeSymptomsOnset": 4,
+      "keysAfterSymptomsOnset": 5,
+      "keysBeforeTestDate": 2,
+      "keysAfterTestDate": 2
+    },
+    "diagnosisKeysDataMapping": {
+      "daysSinceOnsetToInfectiousness": {
+        "0": 2,
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "-14": 0,
+        "-13": 0,
+        "-12": 0,
+        "-11": 0,
+        "-10": 0,
+        "-9": 0,
+        "-8": 0,
+        "-7": 0,
+        "-6": 1,
+        "-5": 1,
+        "-4": 1,
+        "-3": 1,
+        "-2": 2,
+        "-1": 2
+      },
+      "infectiousnessWithoutOnset": 1,
+      "defaultReportType": 1
+    },
+    "serverConfiguration": {
+      "verificationApiKey": "MStuNDiHdEY6jtl6vdVQlIkOnr3RPgYomgLjQb7/089T+3qa29V/FAR9xvp1FbeKHocXwqw2lAtkE7pVIES/rg",
+      "verificationUrl": "https://verification.api.wehealth.org",
+      "tekUploadUrl": "https://exposure.api.wehealth.org",
+      "tekDownloadIndexUrl": "https://exposure.wehealth.org/exposureKeyExport-BM/index.txt",
+      "tekDownloadBaseUrl": "https://exposure.wehealth.org"
+    },
+    "nextStepsNoSignificantExposure": [
+      {
+        "type": 0,
+        "description": "With notifications ON, the app will continue to detect possible COVID-19 exposures, even when closed."
+      },
+      {
+        "type": 2,
+        "url": "https://c.wehealth.org/3nsCMS3",
+        "description": "View Bermuda's latest travel guidelines for your visit."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/3gmfZFv",
+        "description": "Learn how to stay safe during the pandemic."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/36W7DkV",
+        "description": "View Bermuda's latest COVID-19 guidelines."
+      }
+    ],
+    "nextStepsLowExposure": [
+      {
+        "type": 0,
+        "description": "The exposure was not near enough for long enough to recommend quarantine."
+      },
+      {
+        "type": 2,
+        "url": "https://c.wehealth.org/3bp4KeS",
+        "description": "View Bermuda's latest travel guidelines for your visit."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/349QGBN",
+        "description": "Learn how to stay safe during the pandemic."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/2VQhhit",
+        "description": "View Bermuda's latest COVID-19 guidelines."
+      }
+    ],
+    "nextStepsSignificantExposure": [
+      {
+        "type": 0,
+        "description": "Please stay at home and self quarantine until DAYS_FROM_EXPOSURE{LATEST,14,FALSE}."
+      },
+      {
+        "type": 2,
+        "url": "https://c.wehealth.org/3s1o5c5",
+        "description": "If you have symptoms, please stay home, away from others."
+      },
+      {
+        "type": 1,
+        "url": "tel:1-441-278-6501",
+        "description": "Please contact our Case Management team immediately on (441) 278-6501."
+      },
+      {
+        "type": 2,
+        "url": "mailto:covid19casemanagement@gov.bm",
+        "description": "You can also contact Case Management at covid19casemanagement@gov.bm"
+      }
+    ],
+    "nextStepsVerifiedPositive": [
+      {
+        "type": 0,
+        "description": "Please follow the guidelines your Case Manager has given you."
+      },
+      {
+        "type": 2,
+        "url": "https://c.wehealth.org/33T5og0",
+        "description": "Learn more about the WeHealth Bermuda App."
+      }
+    ],
+    "nextStepsVerificationCode": [
+      {
+        "type": 2,
+        "url": "https://c.wehealth.org/33VBCaw",
+        "description": "Should you test positive for COVID-19, a Case Manager can issue you a code."
+      }
+    ]
+  }
+]

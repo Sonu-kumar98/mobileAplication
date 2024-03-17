@@ -1,0 +1,12 @@
+<objects>
+
+    <object name="menuIcon" >
+        <web locatorType="xpath" locatorValue="//button[@aria-label='menu']" />
+    </object>
+
+    <object name="mobileAppSettingsMenuOption" >
+        <web locatorType="id" locatorValue="mobile-app-settings" />
+    </object>
+
+
+</objects>

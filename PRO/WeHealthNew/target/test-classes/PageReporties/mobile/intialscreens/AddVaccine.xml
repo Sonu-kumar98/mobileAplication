@@ -1,0 +1,94 @@
+<objects>
+
+    <object name="openAddVaccinePage" >
+        <android locatorType="xpath" locatorValue="//*[@text='Add a COVID-19 Vaccine']"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="typeDropdownOptions" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/vaccine_types')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+
+    <object name="doseDropdownOptions" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/vaccine_dose')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+
+    <object name="calender" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/et_vaccination_date')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="date" >
+<!--        <android locatorType="xpath" locatorValue="//android.widget.TextView[@text='{{D}}']"/>-->
+        <android locatorType="xpath" locatorValue="//android.widget.TextView[@content-desc='Mon, May 17']"/>
+        <ios locatorType="xpath" locatorValue="" />
+    </object>
+
+    <object name="okButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/confirm_button')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="addVaccineButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/btn_add_vaccine')] "/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    //Congratulation_Page
+    <object name="tittle" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/subtitle')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="myAnonymous_Btn" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/btn_view_anon_info')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    //My_Anonymous_Page
+    <object name="tittle_MyAnonymous_Info" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/title')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="expand_Arrow" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/expand_arrow')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="close_Btn" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/close_button')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    // Home_Page We-Health
+    <object name="vaccinated_Btn" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/vaccination_status')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="menu_Btn" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/menu')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="my_Anonymous_Info" >
+        <android locatorType="xpath" locatorValue="//*[@text='My Anonymous Info']"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="delete_Btn" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/btn_delete')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/button1')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+</objects>

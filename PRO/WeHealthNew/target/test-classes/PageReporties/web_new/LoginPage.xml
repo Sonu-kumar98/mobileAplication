@@ -1,0 +1,20 @@
+<objects>
+
+    <object name="usernameTextbox" >
+        <web locatorType="id" locatorValue="email" />
+    </object>
+
+    <object name="passwordTextbox" >
+        <web locatorType="id" locatorValue="password" />
+    </object>
+
+    <object name="loginButton" >
+        <web locatorType="xpath" locatorValue="//button[text()='Login']" />
+    </object>
+
+    <object name="loginErrorMessage" >
+        <web locatorType="xpath" locatorValue="//div[@class='toastMessage'][text()='The email address or password you entered is incorrect.']" />
+    </object>
+    
+
+</objects>

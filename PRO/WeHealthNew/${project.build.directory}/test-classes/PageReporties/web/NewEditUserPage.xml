@@ -1,0 +1,27 @@
+<objects>
+
+    <object name="NewUserTitle" >
+        <web locatorType="xpath" locatorValue="//h1[text()='New user']" />
+    </object>
+
+    <object name="EditUserTitle" >
+        <web locatorType="xpath" locatorValue="//h1[text()='Edit user']" />
+    </object>
+
+    <object name="userNameTextbox" >
+        <web locatorType="id" locatorValue="name" />
+    </object>
+
+    <object name="emailTextbox" >
+        <web locatorType="id" locatorValue="email" />
+    </object>
+
+    <object name="adminCheckbox" >
+        <web locatorType="id" locatorValue="admin" />
+    </object>
+
+    <object name="createUpdateUserButton" >
+        <web locatorType="id" locatorValue="submit-user" />
+    </object>
+
+</objects>

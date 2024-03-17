@@ -1,0 +1,27 @@
+<objects>
+
+    <object name="UserDetailTitle" >
+        <web locatorType="xpath" locatorValue="//p[contains(text(), 'Here is information about the user.')]" />
+    </object>
+
+    <object name="editLink" >
+        <web locatorType="xpath" locatorValue="//a[text()='Edit']" />
+    </object>
+
+    <object name="userName" >
+        <web locatorType="xpath" locatorValue="//strong[text()='Name']/following-sibling::div" />
+    </object>
+
+    <object name="email" >
+        <web locatorType="xpath" locatorValue="//strong[text()='Email']/following-sibling::div" />
+    </object>
+
+    <object name="admin" >
+        <web locatorType="xpath" locatorValue="//strong[text()='Admin']/following-sibling::div" />
+    </object>
+
+    <object name="passwordResetButton" >
+        <web locatorType="xpath" locatorValue="//button[@type='password-reset']" />
+    </object>
+
+</objects>

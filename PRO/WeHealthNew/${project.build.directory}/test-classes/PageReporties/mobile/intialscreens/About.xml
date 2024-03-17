@@ -1,0 +1,21 @@
+
+<objects>
+    // Made by Sonu kumar
+    // Using page object model type
+
+<!--    <object name="openAboutPage" >-->
+<!--        <android locatorType="xpath" locatorValue="//*[@text='About']"/>-->
+<!--        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />-->
+<!--    </object>-->
+
+    <object name="openAboutPage" >
+        <android locatorType="xpath" locatorValue="//*[@text='Sobre']"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="close" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/close_button')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+</objects>

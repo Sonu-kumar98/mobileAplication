@@ -1,0 +1,37 @@
+<objects>
+     <object name="settingsTitle" >
+		<android locatorType="xpath" locatorValue="//android.widget.TextView[@text='Settings']" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@label='Settings']" />
+	</object>
+
+	 <object name="RegionDropdownSelectedOption" >
+		<android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/regions_dropdown')]" />
+		<ios locatorType="xpath" locatorValue="(//XCUIElementTypeImage[@name='Arrow Down' or @name='Arrow Up']/preceding-sibling::XCUIElementTypeStaticText)[last()]" />
+	</object>
+
+	<object name="RegionDropdownOptions_IOS" >
+		<android locatorType="" locatorValue="" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeImage[@name='Arrow Down' or @name='Arrow Up']/following-sibling::XCUIElementTypeStaticText" />
+	</object>
+
+	<object name="exposureNotificationCheckbox" >
+		<android locatorType="xpath" locatorValue="//android.widget.Switch[ends-with(@resource-id, 'id/enable_exposure_notification')]" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeSwitch[@name='Exposure Notifications']" />
+	</object>
+
+	<object name="onlyHighExposureCheckbox" >
+		<android locatorType="xpath" locatorValue="//android.widget.CheckBox[ends-with(@resource-id, 'id/only_high_exposures')][@text='Only notify me of High Exposures']" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@label='Only notify me of &quot;High Exposures&quot;']/following-sibling::XCUIElementTypeButton[contains(@name, 'Checkbox')]" />
+	</object>
+
+	<object name="notifyLowExposureCheckbox" >
+		<android locatorType="xpath" locatorValue="//android.widget.CheckBox[ends-with(@resource-id, 'id/notify_of_low_exposures')]" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@label='Notify me of &quot;Low Exposures&quot;']/following-sibling::XCUIElementTypeButton[contains(@name, 'Checkbox')]" />
+	</object>
+
+	<object name="saveButton" >
+		<android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/btn_save_settings')]" />
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Save']" />
+	</object>
+
+</objects>

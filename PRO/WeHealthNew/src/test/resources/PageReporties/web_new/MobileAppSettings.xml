@@ -1,0 +1,95 @@
+<objects>
+
+    <object name="regionDropdown" >
+        <web locatorType="xpath" locatorValue="//select[@name='region']" />
+    </object>
+
+    <object name="HighExposureThreshold" >
+        <web locatorType="name" locatorValue="significantRiskLevelValueThreshold" />
+    </object>
+
+    <object name="saveAndSubmitButton" >
+        <web locatorType="xpath" locatorValue="(//button[text()='Save and Submit to App'])[2]" />
+    </object>
+
+    <object name="saveAndSubmitIAcceptCheckboxSpan" >
+        <web locatorType="xpath" locatorValue="//label[input[@id='accept']]/span" />
+    </object>
+
+    <object name="submitButton" >
+        <web locatorType="xpath" locatorValue="//button[text()='Submit']" />
+    </object>
+
+
+<!--    NoSignificantExposureMessages-->
+    <object name="NoSignificantExposureMessagesExpandCollapseButton" >
+        <web locatorType="xpath" locatorValue="//div[span[text()='No Exposure Detected']]/button" />
+    </object>
+
+    <object name="DynamicNoSignificantExposureDescription" >
+        <web locatorType="xpath" locatorValue="//textarea[@name='nextStepsNoSignificantExposure[{{index}}].description']" />
+    </object>
+
+    <object name="DynamicNoSignificantExposureTypeDropdown" >
+        <web locatorType="xpath" locatorValue="//select[@name='nextStepsNoSignificantExposure[{{index}}].type']" />
+    </object>
+
+    <object name="DynamicNoSignificantExposureURL" >
+        <web locatorType="xpath" locatorValue="//textarea[@name='nextStepsNoSignificantExposure[{{index}}].url']" />
+    </object>
+
+<!--    SignificantExposureMessages-->
+
+    <object name="SignificantExposureMessagesExpandCollapseButton" >
+        <web locatorType="xpath" locatorValue="//div[span[text()='Significant Exposure']]/button" />
+    </object>
+
+    <object name="DynamicSignificantExposureDescription" >
+        <web locatorType="xpath" locatorValue="//textarea[@name='nextStepsSignificantExposure[{{index}}].description']" />
+    </object>
+
+    <object name="DynamicSignificantExposureTypeDropdown" >
+        <web locatorType="xpath" locatorValue="//select[@name='nextStepsSignificantExposure[{{index}}].type']" />
+    </object>
+
+    <object name="DynamicSignificantExposureURL" >
+        <web locatorType="xpath" locatorValue="//textarea[@name='nextStepsSignificantExposure[{{index}}].url']" />
+    </object>
+
+<!--    VerificationCodeMessages-->
+
+    <object name="VerificationCodeMessagesExpandCollapseButton" >
+        <web locatorType="xpath" locatorValue="//div[span[text()='Verification Code']]/button" />
+    </object>
+
+    <object name="DynamicVerificationCodeDescription" >
+        <web locatorType="xpath" locatorValue="//textarea[@name='nextStepsVerificationCode[{{index}}].description']" />
+    </object>
+
+    <object name="DynamicVerificationCodeTypeDropdown" >
+        <web locatorType="xpath" locatorValue="//select[@name='nextStepsVerificationCode[{{index}}].type']" />
+    </object>
+
+    <object name="DynamicVerificationCodeURL" >
+        <web locatorType="xpath" locatorValue="//textarea[@name='nextStepsVerificationCode[{{index}}].url']" />
+    </object>
+
+<!--    VerifiedPositiveMessages-->
+
+    <object name="VerifiedPositiveMessagesExpandCollapseButton" >
+        <web locatorType="xpath" locatorValue="//div[span[text()='Verified Positive Diagnosis']]/button" />
+    </object>
+
+    <object name="DynamicVerifiedPositiveDescription" >
+        <web locatorType="xpath" locatorValue="//textarea[@name='nextStepsVerifiedPositive[{{index}}].description']" />
+    </object>
+
+    <object name="DynamicVerifiedPositiveTypeDropdown" >
+        <web locatorType="xpath" locatorValue="//select[@name='nextStepsVerifiedPositive[{{index}}].type']" />
+    </object>
+
+    <object name="DynamicVerifiedPositiveURL" >
+        <web locatorType="xpath" locatorValue="//textarea[@name='nextStepsVerifiedPositive[{{index}}].url']" />
+    </object>
+
+</objects>

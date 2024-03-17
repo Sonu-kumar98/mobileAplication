@@ -1,0 +1,243 @@
+package com.impactqa.test.mobile;
+
+import com.impactqa.listeners.TestAllureListener;
+import com.impactqa.page.mobile.*;
+import com.impactqa.utilities.ExcelUtil;
+import com.impactqa.utilities.FrameworkConfig;
+import com.impactqa.utilities.PageObjectRepoHelper;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Description;
+import io.qameta.allure.model.Status;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import java.net.MalformedURLException;
+
+@Listeners({TestAllureListener.class})
+public class TC0010_Add_Vaccine  extends BaseTestMobile2 {
+
+    @BeforeClass
+    @Parameters({"dataID"})
+    @Description("Read test data with testID {0}")
+    public void getTestData(String dataID)
+    {
+        ExcelUtil excel = new ExcelUtil();
+        excel.setWorkbook(FrameworkConfig.getStringEnvProperty("TestDataFileLocation"),
+                FrameworkConfig.getStringEnvProperty("TestDataSheetName"));
+
+        testDataMap = excel.getRowDataMtahcingDataId(dataID);
+        System.out.println(""+testDataMap);
+        if(testDataMap.size()<1)
+            Assert.fail("dataID '"+dataID+"' is valid the excel sheet. please check the test data sheet");
+
+    }
+
+    @Test(priority = 1, description = "Uninstall All App")
+    @Description("Uninstall All Apps")
+    public void unInstallAllApp() throws MalformedURLException {
+        openMobileSessionDeviceSettings(testDataMap.get("MobileSessionID1"));
+        DeviceSettingsAppScreen deviceSettingsAppScreen = new DeviceSettingsAppScreen(driver,platform);
+        deviceSettingsAppScreen.turnOffExposureNotificationFromIOSDeviceSettings();
+        deviceSettingsAppScreen.uninstallAllApps();
+    }
+
+
+    @Test(priority = 2, dependsOnMethods = {"unInstallAllApp"}, description = "Install Main App")
+    @Description("Install Main App")
+    public void installApp() throws MalformedURLException {
+        teardownDriverInstance();
+        openMobileSession(testDataMap.get("MobileSessionID1"));
+
+    }
+
+    @Test(priority = 3, dependsOnMethods = {"installApp"}, description = "Verify Getting Started Page")
+    @Description("Verify Getting Started Page")
+    public void verifyGettingStartedPage() throws MalformedURLException {
+
+        GettingStarted gettingStarted = new GettingStarted(driver, platform);
+        gettingStarted.verifyGettingStartedPageDisplayed();
+        gettingStarted.clickGettingStartedButton();
+
+    }
+
+    @Test(priority = 4, dependsOnMethods = {"verifyGettingStartedPage"}, description = "Verify App Introduction Page")
+    @Description("Verify App Introduction Page")
+    public void verifyIntroductionPage()
+    {
+
+        AppExplanationPage appExplanationPage = new AppExplanationPage(driver, platform);
+        appExplanationPage.verifyAppExplanationPageDisplayed();
+        appExplanationPage.verifyTextHowToWorkPage();
+        appExplanationPage.clickHowItWorksButton();
+    }
+
+    @Test(priority = 5, dependsOnMethods = {"verifyIntroductionPage"}, description = "Verify How It Works")
+    @Description("Verify How It Works")
+    public void verifyHowItWorksPage()
+    {
+
+        HowItWorks howItWorks = new HowItWorks(driver, platform);
+//        howItWorks.verifyHowItWorksPageDisplayed();
+        howItWorks.clickNextButton();
+        howItWorks.clickNextButton();
+        howItWorks.clickNextButton();
+        howItWorks.clickContinueSetupButton();
+    }
+
+    @Test(priority = 6, dependsOnMethods = {"verifyHowItWorksPage"}, description = "Verify Enable Exposure Screen")
+    @Description("Verify Enable Exposure Screen")
+    public void verifyEnableExposureScreen()
+    {
+
+        EnableExposureScreen enableExposureScreen = new EnableExposureScreen(driver, platform);
+        enableExposureScreen.verifyEnableExposurePageDisplayed();
+        enableExposureScreen.clickEnableButton();
+        enableExposureScreen.verifyEnableExposurePopupDisplayed();
+        enableExposureScreen.clickTurnOnButton();
+    }
+
+    @Test(priority = 7, dependsOnMethods = {"verifyEnableExposureScreen"}, description = "Verify Push Notifications Screen")
+    @Description("Verify Push Notifications Screen")
+    public void verifyPushNotificationsScreen()
+    {
+        if(platform== PageObjectRepoHelper.PLATFORM.IOS) {
+
+            IOSPushNotifications iosPushNotifications = new IOSPushNotifications(driver, platform);
+            iosPushNotifications.verifyPushNotificationPageDisplayed();
+            iosPushNotifications.clickOnEnableButton();
+            iosPushNotifications.verifyPushNotificationPopupDisplayed();
+            iosPushNotifications.clickAllowButton();
+        }
+        else
+            Allure.step("Not applicable for Android", Status.PASSED);
+    }
+
+    @Test(priority = 8, dependsOnMethods = {"verifyPushNotificationsScreen"}, description = "Verify Settings Screen")
+    @Description("Verify Settings Screen")
+    public void verifySettingsPage()
+    {
+
+        SettingsPage settingsPage = new SettingsPage(driver, platform);
+        settingsPage.verifySettingsPageDisplayed();
+        //    settingsPage.selectRegion(testDataMap.get("BuildType"), testDataMap.get("Region"));
+        settingsPage.verifyExposureNotificationCheckboxStatus("checked");
+        settingsPage.notifyLowExposureCheckbox(testDataMap.get("NotifyLowExposures"));
+        settingsPage.clickSaveButton();
+    }
+
+    // Made by Sonu Kumar
+    // 06-03-21
+    @Test(priority = 9, dependsOnMethods = {"verifyPushNotificationsScreen"}, description = "Verify SetupComplete page")
+    @Description("Verify Setup Complete Page")
+    public void verifySetupCompletePage()
+    {
+        SetupPage set = new SetupPage(driver,platform);
+        set.verifySetupCompletePageDisplayed();
+        set.verifyTextOnSetupCompletePage();
+        set.clickOkButton();
+
+    }
+
+    @Test(priority = 10, dependsOnMethods = {"verifySettingsPage"}, description = "Verify Home Screen")
+    @Description("Verify Home Screen")
+    public void verifyHomePage()
+    {
+        HomePage homePage = new HomePage(driver, platform);
+        homePage.verifyHomePageDisplayed();
+        if("High".equals(testDataMap.get("ExpectedExposureLevel")))
+            if(platform== PageObjectRepoHelper.PLATFORM.ANDROID)
+                homePage.verifyRiskLevelMessage("High Exposure in the past 14 days");
+            else
+                homePage.verifyRiskLevelMessage("High Exposure");
+        else if("Low".equals(testDataMap.get("ExpectedExposureLevel")))
+            if(platform== PageObjectRepoHelper.PLATFORM.ANDROID)
+                homePage.verifyRiskLevelMessage("Low Exposure in the past 14 days");
+            else
+                homePage.verifyRiskLevelMessage("Low Exposure");
+        else if("Verified Positive Diagnosis".equals(testDataMap.get("ExpectedExposureLevel")))
+            if(platform== PageObjectRepoHelper.PLATFORM.ANDROID)
+                homePage.verifyRiskLevelMessage("Verified Positive Diagnosis");
+        else
+        if(platform== PageObjectRepoHelper.PLATFORM.ANDROID)
+            homePage.verifyRiskLevelMessage("No Exposure Detected in the past 14 days");
+        else
+            homePage.verifyRiskLevelMessage("No Exposure Detected");
+
+        homePage.clickVaccinesButton();
+    }
+
+    @Test(priority = 11, dependsOnMethods = {"verifyHomePage"}, description = "Verify Introduction Page of Covid Vaccine")
+    @Description("Verify introduction page of vaccine")
+    public void verifyIntroCovidVaccinePage()
+    {
+
+        AddCovidVaccineIntroductionPage add = new AddCovidVaccineIntroductionPage(driver,platform);
+        add.verifyAddCovidVaccineIntroductionPageDisplay();
+        add.getAppiumUtils().snap("Intro_Page_Add_my Vaccine");
+        add.verifyTextAddCovidVaccineIntroductionPageDisplay();
+        add.clickContinueButton();
+
+    }
+
+    @Test(priority = 12, dependsOnMethods = {"verifyIntroCovidVaccinePage"}, description = "Verify Add Covid Vaccine Page")
+    @Description("Verify Add covid vaccine page")
+    public void verifyAddCovidVaccinePage()
+    {
+        AddVaccinePage addVaccine = new AddVaccinePage(driver,platform);
+        addVaccine.verifyTextAddCovidVaccinePageDisplay();
+        addVaccine.verifyTextAddCovidVaccinePageDisplay();
+        addVaccine.getAppiumUtils().snap("Add_my Vaccine_Page");
+        addVaccine.selectType(testDataMap.get("BuildType"),testDataMap.get("VaccineType"));
+        addVaccine.selectDose(testDataMap.get("BuildType"),testDataMap.get("Dose"));
+        addVaccine.clickOnCalender();
+        addVaccine.clickOnDate();
+        addVaccine.clickOnOkButton();
+        addVaccine.getAppiumUtils().snap("Add_my Vaccine_Page2");
+        addVaccine.clickAddVaccineButton();
+
+    }
+
+    @Test(priority = 13, dependsOnMethods = {"verifyAddCovidVaccinePage"}, description = "Verify Congratulation Page")
+    @Description("Verify Congratulation page")
+    public void verifyCongratulationPage()
+    {
+        AddVaccinePage addVaccine = new AddVaccinePage(driver,platform);
+        addVaccine.verifyCongratulationPageDisplay();
+        addVaccine.verifyCongratulationPageDisplay();
+        addVaccine.getAppiumUtils().snap("CongratulationPage");
+        addVaccine.clickMyAnonymousButton();
+        addVaccine.clickCloseButtonMyAnonymous();
+        addVaccine.clickCloseButtonMenu();
+
+    }
+
+    @Test(priority = 14, dependsOnMethods = {"verifyCongratulationPage"}, description = "Verify homePage vaccinated Page")
+    @Description("Verify homepage vaccinated page")
+    public void verifyHomePageVaccinated()
+    {
+        AddVaccinePage addVaccine = new AddVaccinePage(driver,platform);
+        addVaccine.verifyHomePageDisplay();
+        addVaccine.verifyTextOnHomePageDisplay();
+        addVaccine.clickOnMenuButton();
+
+    }
+
+    @Test(priority = 15, dependsOnMethods = {"verifyHomePageVaccinated"}, description = "Verify My Anonymous Page")
+    @Description("Verify My Anonymous  page")
+    public void verifyMyAnonymousPage()
+    {
+        AddVaccinePage addVaccine = new AddVaccinePage(driver,platform);
+        addVaccine.clickOnMyAnonymousInfo();
+        addVaccine.verifyMyAnonymousPageDisplay();
+        addVaccine.verifyTextMyAnonymousPageDisplay();
+        addVaccine.clickOnExpandButton();
+        addVaccine.clickOnDeleteButton();
+        addVaccine.clickOnDeletePopUp();
+        addVaccine.clickCloseButtonMyAnonymous();
+        addVaccine.clickCloseButtonMenu();
+
+    }
+}

@@ -1,0 +1,40 @@
+<objects>
+
+	 <object name="pushNotificationTitle" >
+		 <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='Get Push Notifications']" />
+	</object>
+
+	<object name="pageImage" >
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeImage[@name='Get Push Notifications']" />
+	</object>
+
+	<object name="pageSubtitle" >
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='This will let you know if your phone settings are preventing it from working properly or if Bluetooth is off. This can be turned off at any time.'']" />
+	</object>
+
+	<object name="enableButton" >
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Enable']" />
+	</object>
+
+	<object name="notNowButton" >
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Not Now']" />
+	</object>
+
+	<object name="alertPopupTitle" >
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='“Covid Watch” Would Like to Send You Notifications']" />
+	</object>
+
+	<object name="alertPopupMessage" >
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='Notifications may include alerts, sounds and icon badges. These can be configured in Settings.'" />
+	</object>
+
+	<object name="allowButton" >
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Allow']" />
+	</object>
+
+	<object name="dontAllowButton" >
+		<ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Don’t Allow']" />
+	</object>
+
+
+</objects>

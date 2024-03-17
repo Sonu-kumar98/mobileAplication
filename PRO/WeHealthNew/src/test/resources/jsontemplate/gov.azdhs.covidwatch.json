@@ -1,0 +1,917 @@
+[
+  {
+    "id": 0,
+    "name": "State of Arizona",
+    "isDisabled": false,
+    "recentExposureDays": 14,
+    "exposureConfiguration": {
+      "attenuationDurationThresholds": [
+        50,
+        70
+      ],
+      "minimumRiskScore": 64,
+      "transmissionRiskLevelValues": [
+        0,
+        0,
+        0,
+        2,
+        4,
+        5,
+        8,
+        0
+      ],
+      "daysSinceLastExposureLevelValues": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "attenuationLevelValues": [
+        0,
+        2,
+        2,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "durationLevelValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "riskModelConfiguration": {
+      "excludeDaysRelativeToPossibleInfectedDay": [
+        0,
+        1
+      ],
+      "doseResponseLambda": 0.0000031,
+      "attenuationDurationWeights": [
+        2.39,
+        0.6,
+        0.06
+      ],
+      "significantRiskLevelValueThreshold": 0.0,
+      "riskLevelsForDaysRelativeToSymptomsStartDay": {
+        "0": 6,
+        "1": 6,
+        "2": 6,
+        "3": 5,
+        "4": 4,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1,
+        "-3": 4,
+        "-4": 3,
+        "-5": 1,
+        "-1": 6,
+        "-2": 5
+      },
+      "transmissionRiskValuesForLevels": [
+        0,
+        10,
+        21.5443469,
+        31.6227766,
+        46.4158883,
+        68.1292069,
+        100,
+        100
+      ],
+      "discountSchedule": [
+        1,
+        0.99998,
+        0.994059,
+        0.9497885,
+        0.858806,
+        0.755134,
+        0.660103392,
+        0.586894919,
+        0.533407703,
+        0.494373128,
+        0.463039432,
+        0.438587189,
+        0.416241392,
+        0.393207216,
+        0.367287169,
+        0.340932595,
+        0.313997176,
+        0.286927378,
+        0.265554932,
+        0.240765331,
+        0.217746365,
+        0.201059905,
+        0.185435372,
+        0.172969757,
+        0.156689676,
+        0.141405162,
+        0.124388311,
+        0.108319101,
+        0.094752304,
+        0.081300662,
+        0.070016527,
+        0.056302622,
+        0.044703284,
+        0.036214683,
+        0.030309399,
+        0.024554527,
+        0.018833743,
+        0.014769669
+      ],
+      "riskLevelsForDaysRelativeToTestDay": {
+        "-4": 1,
+        "3": 2,
+        "-2": 3,
+        "4": 1,
+        "0": 4,
+        "-3": 2,
+        "1": 4,
+        "-1": 4,
+        "2": 3
+      },
+      "lowExposureDuration": 900,
+      "highExposureDuration": 2700,
+      "attenuationBuckets": [
+        50,
+        60,
+        70
+      ],
+      "attenuationWeights": [
+        2,
+        1.03,
+        0.5,
+        0.0
+      ],
+      "infectiousnessWeights": {
+        "0": 0,
+        "1": 0.5,
+        "2": 1.5
+      },
+      "reportTypeWeights": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "keysBeforeSymptomsOnset": 4,
+      "keysAfterSymptomsOnset": 5,
+      "keysBeforeTestDate": 2,
+      "keysAfterTestDate": 2
+    },
+    "diagnosisKeysDataMapping": {
+      "daysSinceOnsetToInfectiousness": {
+        "0": 2,
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "-14": 0,
+        "-13": 0,
+        "-12": 0,
+        "-11": 0,
+        "-10": 0,
+        "-9": 0,
+        "-8": 0,
+        "-7": 0,
+        "-6": 1,
+        "-5": 1,
+        "-4": 1,
+        "-3": 1,
+        "-2": 2,
+        "-1": 2
+      },
+      "infectiousnessWithoutOnset": 1,
+      "defaultReportType": 1
+    },
+    "serverConfiguration": {
+      "verificationApiKey": "L2bUqnUXZiT1d4xZoMS5JydDfYmHKByicEPGZhrs7dDf2nHeCMGAvPbT0w586UFbxx7uuR4MoqP30BzpYfy2YQ",
+      "verificationUrl": "https://verification.api.wehealth.org",
+      "tekUploadUrl": "https://exposure.api.wehealth.org",
+      "tekDownloadIndexUrl": "https://exposure.wehealth.org/US-AZ/index.txt",
+      "tekDownloadBaseUrl": "https://exposure.wehealth.org"
+    },
+    "nextStepsNoSignificantExposure": [
+      {
+        "type": 0,
+        "description": "With notifications ON, the app will continue to detect possible COVID-19 exposures, even when closed."
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/3qiUNns",
+        "description": "If you have symptoms, get tested right away."
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/3oP3DsS",
+        "description": "Get vaccinated when eligible."
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/3nPJUb2",
+        "description": "Learn how to protect yourself and others."
+      }
+    ],
+    "nextStepsLowExposure": [
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/3oQztVY",
+        "description": "The app detected someone who tested positive for COVID-19. Please monitor for symptoms."
+      },
+      {
+        "type": 0,
+        "description": "The exposure was not near enough for long enough to recommend quarantine."
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/3bDwYmm",
+        "description": "If you have symptoms, get tested right away."
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/3svNeLZ",
+        "description": "Learn how to protect yourself and others."
+      }
+    ],
+    "nextStepsSignificantExposure": [
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/3qoU0RV",
+        "description": "Stay at home and self-quarantine until DAYS_FROM_EXPOSURE{LATEST,10,FALSE}."
+      },
+      {
+        "type": 2,
+        "url": "https://c.wehealth.org/2XMfGLM",
+        "description": "Monitor for COVID-19 symptoms until DAYS_FROM_EXPOSURE{LATEST,14,FALSE}."
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/3bFhIW5",
+        "description": "If you have any symptoms, get tested right away."
+      }
+    ],
+    "nextStepsVerifiedPositive": [
+      {
+        "type": 0,
+        "description": "Follow up with your healthcare provider for more instructions."
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/3bR1LvQ",
+        "description": "Please stay home, away from others."
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/3sr8cf8",
+        "description": "Learn when it is safe for others to be nearby again."
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/3soGeAN",
+        "description": "Help out by donating plasma, if you are symptom free."
+      }
+    ],
+    "nextStepsVerificationCode": [
+      {
+        "type": 0,
+        "description": "First check your online test results for a code. If you cannot find one there, please ask your healthcare provider to use the Doximity app to send you one."
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "University of Arizona",
+    "isDisabled": false,
+    "recentExposureDays": 14,
+    "exposureConfiguration": {
+      "attenuationDurationThresholds": [
+        50,
+        70
+      ],
+      "minimumRiskScore": 64,
+      "transmissionRiskLevelValues": [
+        0,
+        0,
+        0,
+        2,
+        4,
+        5,
+        8,
+        0
+      ],
+      "daysSinceLastExposureLevelValues": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "attenuationLevelValues": [
+        0,
+        2,
+        2,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "durationLevelValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "riskModelConfiguration": {
+      "excludeDaysRelativeToPossibleInfectedDay": [
+        0,
+        1
+      ],
+      "doseResponseLambda": 0.0000031,
+      "attenuationDurationWeights": [
+        2.39,
+        0.6,
+        0.06
+      ],
+      "significantRiskLevelValueThreshold": 0.0,
+      "riskLevelsForDaysRelativeToSymptomsStartDay": {
+        "0": 6,
+        "1": 6,
+        "2": 6,
+        "3": 5,
+        "4": 4,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1,
+        "-3": 4,
+        "-4": 3,
+        "-5": 1,
+        "-1": 6,
+        "-2": 5
+      },
+      "transmissionRiskValuesForLevels": [
+        0,
+        10,
+        21.5443469,
+        31.6227766,
+        46.4158883,
+        68.1292069,
+        100,
+        100
+      ],
+      "discountSchedule": [
+        1,
+        0.99998,
+        0.994059,
+        0.9497885,
+        0.858806,
+        0.755134,
+        0.660103392,
+        0.586894919,
+        0.533407703,
+        0.494373128,
+        0.463039432,
+        0.438587189,
+        0.416241392,
+        0.393207216,
+        0.367287169,
+        0.340932595,
+        0.313997176,
+        0.286927378,
+        0.265554932,
+        0.240765331,
+        0.217746365,
+        0.201059905,
+        0.185435372,
+        0.172969757,
+        0.156689676,
+        0.141405162,
+        0.124388311,
+        0.108319101,
+        0.094752304,
+        0.081300662,
+        0.070016527,
+        0.056302622,
+        0.044703284,
+        0.036214683,
+        0.030309399,
+        0.024554527,
+        0.018833743,
+        0.014769669
+      ],
+      "riskLevelsForDaysRelativeToTestDay": {
+        "-4": 1,
+        "3": 2,
+        "-2": 3,
+        "4": 1,
+        "0": 4,
+        "-3": 2,
+        "1": 4,
+        "-1": 4,
+        "2": 3
+      },
+      "lowExposureDuration": 900,
+      "highExposureDuration": 2700,
+      "attenuationBuckets": [
+        50,
+        60,
+        70
+      ],
+      "attenuationWeights": [
+        2,
+        1.03,
+        0.5,
+        0.0
+      ],
+      "infectiousnessWeights": {
+        "0": 0,
+        "1": 0.5,
+        "2": 1.5
+      },
+      "reportTypeWeights": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "keysBeforeSymptomsOnset": 4,
+      "keysAfterSymptomsOnset": 5,
+      "keysBeforeTestDate": 2,
+      "keysAfterTestDate": 2
+    },
+    "diagnosisKeysDataMapping": {
+      "daysSinceOnsetToInfectiousness": {
+        "0": 2,
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "-14": 0,
+        "-13": 0,
+        "-12": 0,
+        "-11": 0,
+        "-10": 0,
+        "-9": 0,
+        "-8": 0,
+        "-7": 0,
+        "-6": 1,
+        "-5": 1,
+        "-4": 1,
+        "-3": 1,
+        "-2": 2,
+        "-1": 2
+      },
+      "infectiousnessWithoutOnset": 1,
+      "defaultReportType": 1
+    },
+    "serverConfiguration": {
+      "verificationApiKey": "L2bUqnUXZiT1d4xZoMS5JydDfYmHKByicEPGZhrs7dDf2nHeCMGAvPbT0w586UFbxx7uuR4MoqP30BzpYfy2YQ",
+      "verificationUrl": "https://verification.api.wehealth.org",
+      "tekUploadUrl": "https://exposure.api.wehealth.org",
+      "tekDownloadIndexUrl": "https://exposure.wehealth.org/US-AZ/index.txt",
+      "tekDownloadBaseUrl": "https://exposure.wehealth.org"
+    },
+    "nextStepsNoSignificantExposure": [
+      {
+        "type": 0,
+        "description": "With notifications ON, the app will continue to detect possible COVID-19 exposures, even when closed."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/3hFvTcS",
+        "description": "Monitor COVID-19 symptoms."
+      },
+      {
+        "type": 1,
+        "url": "tel:1-520-621-9202",
+        "description": "If you have COVID-19 symptoms, call Campus Health at (520) 621-9202."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/2FFoxsZ",
+        "description": "Get the latest information about UArizona COVID-19 resources."
+      }
+    ],
+    "nextStepsLowExposure": [
+      {
+        "type": 0,
+        "description": "The exposure was not near enough for long enough to recommend quarantine."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/3l3q62C",
+        "description": "The app detected someone who tested positive for COVID-19. Monitor for symptoms."
+      },
+      {
+        "type": 1,
+        "url": "tel:1-520-621-9202",
+        "description": "If you have COVID-19 symptoms, call Campus Health at (520) 621-9202."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/33bYL8o",
+        "description": "Get the latest information about UArizona COVID-19 resources."
+      }
+    ],
+    "nextStepsSignificantExposure": [
+      {
+        "type": 1,
+        "url": "tel:1-520-621-9202",
+        "description": "Call Campus Health at (520) 621-9202 and schedule a COVID-19 test for DAYS_FROM_EXPOSURE{LATEST,6,TRUE}."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/2FBTQ8a",
+        "description": "Stay at home and self-quarantine until DAYS_FROM_EXPOSURE{LATEST,10,FALSE}, or 3 days earlier if you test negative."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/35MQlq2",
+        "description": "Monitor for COVID-19 symptoms until DAYS_FROM_EXPOSURE{LATEST,14,FALSE} and get tested ASAP if symptoms appear."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/2ZNZ1sC",
+        "description": "Register with University of Arizona’s Contact Tracing team."
+      }
+    ],
+    "nextStepsVerifiedPositive": [
+      {
+        "type": 2,
+        "url": "https://bit.ly/3c4cn90",
+        "description": "What should you do if you've tested positive for COVID-19?"
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/2LGZucj",
+        "description": "Access resources and support for healthy coping."
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/2Y0becc",
+        "description": "Help out by donating plasma, if you are symptom free."
+      }
+    ],
+    "nextStepsVerificationCode": [
+      {
+        "type": 1,
+        "url": "tel:1-520-621-9202",
+        "description": "If you are a student, faculty, or staff member at University of Arizona, please call Campus Health Services at 520-621-9202 to obtain one. If you were tested elsewhere, please have your results ready."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Northern Arizona University",
+    "isDisabled": false,
+    "recentExposureDays": 14,
+    "exposureConfiguration": {
+      "attenuationDurationThresholds": [
+        50,
+        70
+      ],
+      "minimumRiskScore": 64,
+      "transmissionRiskLevelValues": [
+        0,
+        0,
+        0,
+        2,
+        4,
+        5,
+        8,
+        0
+      ],
+      "daysSinceLastExposureLevelValues": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "attenuationLevelValues": [
+        0,
+        2,
+        2,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "durationLevelValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "riskModelConfiguration": {
+      "excludeDaysRelativeToPossibleInfectedDay": [
+        0,
+        1
+      ],
+      "doseResponseLambda": 0.0000031,
+      "attenuationDurationWeights": [
+        2.39,
+        0.6,
+        0.06
+      ],
+      "significantRiskLevelValueThreshold": 0.0,
+      "riskLevelsForDaysRelativeToSymptomsStartDay": {
+        "0": 6,
+        "1": 6,
+        "2": 6,
+        "3": 5,
+        "4": 4,
+        "5": 3,
+        "6": 2,
+        "7": 2,
+        "8": 1,
+        "9": 1,
+        "-3": 4,
+        "-4": 3,
+        "-5": 1,
+        "-1": 6,
+        "-2": 5
+      },
+      "transmissionRiskValuesForLevels": [
+        0,
+        10,
+        21.5443469,
+        31.6227766,
+        46.4158883,
+        68.1292069,
+        100,
+        100
+      ],
+      "discountSchedule": [
+        1,
+        0.99998,
+        0.994059,
+        0.9497885,
+        0.858806,
+        0.755134,
+        0.660103392,
+        0.586894919,
+        0.533407703,
+        0.494373128,
+        0.463039432,
+        0.438587189,
+        0.416241392,
+        0.393207216,
+        0.367287169,
+        0.340932595,
+        0.313997176,
+        0.286927378,
+        0.265554932,
+        0.240765331,
+        0.217746365,
+        0.201059905,
+        0.185435372,
+        0.172969757,
+        0.156689676,
+        0.141405162,
+        0.124388311,
+        0.108319101,
+        0.094752304,
+        0.081300662,
+        0.070016527,
+        0.056302622,
+        0.044703284,
+        0.036214683,
+        0.030309399,
+        0.024554527,
+        0.018833743,
+        0.014769669
+      ],
+      "riskLevelsForDaysRelativeToTestDay": {
+        "-4": 1,
+        "3": 2,
+        "-2": 3,
+        "4": 1,
+        "0": 4,
+        "-3": 2,
+        "1": 4,
+        "-1": 4,
+        "2": 3
+      },
+      "lowExposureDuration": 900,
+      "highExposureDuration": 2700,
+      "attenuationBuckets": [
+        50,
+        60,
+        70
+      ],
+      "attenuationWeights": [
+        2,
+        1.03,
+        0.5,
+        0.0
+      ],
+      "infectiousnessWeights": {
+        "0": 0,
+        "1": 0.5,
+        "2": 1.5
+      },
+      "reportTypeWeights": {
+        "0": 0,
+        "1": 1,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "keysBeforeSymptomsOnset": 4,
+      "keysAfterSymptomsOnset": 5,
+      "keysBeforeTestDate": 2,
+      "keysAfterTestDate": 2
+    },
+    "diagnosisKeysDataMapping": {
+      "daysSinceOnsetToInfectiousness": {
+        "0": 2,
+        "1": 2,
+        "2": 2,
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "-14": 0,
+        "-13": 0,
+        "-12": 0,
+        "-11": 0,
+        "-10": 0,
+        "-9": 0,
+        "-8": 0,
+        "-7": 0,
+        "-6": 1,
+        "-5": 1,
+        "-4": 1,
+        "-3": 1,
+        "-2": 2,
+        "-1": 2
+      },
+      "infectiousnessWithoutOnset": 1,
+      "defaultReportType": 1
+    },
+    "serverConfiguration": {
+      "verificationApiKey": "L2bUqnUXZiT1d4xZoMS5JydDfYmHKByicEPGZhrs7dDf2nHeCMGAvPbT0w586UFbxx7uuR4MoqP30BzpYfy2YQ",
+      "verificationUrl": "https://verification.api.wehealth.org",
+      "tekUploadUrl": "https://exposure.api.wehealth.org",
+      "tekDownloadIndexUrl": "https://exposure.wehealth.org/US-AZ/index.txt",
+      "tekDownloadBaseUrl": "https://exposure.wehealth.org"
+    },
+    "nextStepsNoSignificantExposure": [
+      {
+        "type": 0,
+        "description": "With notifications ON, the app will continue to detect possible COVID-19 exposures, even when closed."
+      },
+      {
+        "type": 1,
+        "url": "tel:1-928-523-2131",
+        "description": "If you have COVID-19 symptoms, call Campus Health at (928) 523-2131."
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/2LNQnX3",
+        "description": "Get information about NAU vaccinations."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/2H8BZWS",
+        "description": "Learn how to protect yourself and others."
+      }
+    ],
+    "nextStepsLowExposure": [
+      {
+        "type": 0,
+        "description": "The exposure was not near enough for long enough to recommend quarantine."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/338pyCj",
+        "description": "The app detected someone who tested positive for COVID-19. Monitor for symptoms."
+      },
+      {
+        "type": 1,
+        "url": "tel:1-928-523-2131",
+        "description": "If you have COVID-19 symptoms, call Campus Health at (928) 523-2131."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/2H8BZWS",
+        "description": "Learn how to protect yourself and others."
+      }
+    ],
+    "nextStepsSignificantExposure": [
+      {
+        "type": 2,
+        "url": "https://bit.ly/3iD9MoQ",
+        "description": "Stay at home and self-quarantine until DAYS_FROM_EXPOSURE{LATEST,10,FALSE}, or 3 days earlier if you test negative."
+      },
+      {
+        "type": 2,
+        "url": "http://bit.ly/3qnwuVl",
+        "description": "Schedule a COVID-19 test for DAYS_FROM_EXPOSURE{LATEST,6,TRUE}."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/32APbMi",
+        "description": "Monitor for COVID-19 symptoms until DAYS_FROM_EXPOSURE{LATEST,14,FALSE}."
+      },
+      {
+        "type": 1,
+        "url": "tel:1-928-523-2131",
+        "description": "Call Campus Health ASAP if symptoms appear."
+      }
+    ],
+    "nextStepsVerifiedPositive": [
+      {
+        "type": 1,
+        "url": "tel:1-928-523-2131",
+        "description": "Follow up with Campus Health at (928) 523-2131 or your healthcare provider for more instructions."
+      },
+      {
+        "type": 2,
+        "url": "http://bit.ly/39rg6fQ",
+        "description": "Report your positive test to NAU."
+      },
+      {
+        "type": 2,
+        "url": "https://bit.ly/3mw85Mb",
+        "description": "Please stay at home and follow the self-isolation guidelines."
+      },
+      {
+        "type": 2,
+        "url": "http://c.wehealth.org/3o16uxr",
+        "description": "Learn when it is safe for others to be nearby again."
+      }
+    ],
+    "nextStepsVerificationCode": [
+      {
+        "type": 1,
+        "url": "tel:1-928-523-2131",
+        "description": "If you are a student, faculty, or staff member at NAU, please call Campus Health Services at (928) 523-2131 to obtain one. If you were tested elsewhere, please have your results ready."
+      }
+    ]
+  }
+]

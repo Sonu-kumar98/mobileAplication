@@ -1,0 +1,44 @@
+<objects>
+    // Made by Sonu kumar
+    // Using page object model type
+
+    <object name="SetupComplete" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/setup_complete_title')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="ThanksForHelping" >
+        <android locatorType="xpath" locatorValue= "//*[ends-with(@resource-id, '/explanation')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="getVaccineSupport" ><android locatorType="xpath" locatorValue="//*[@text='NEW: Get vaccine support']"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="getExposureNotification" >
+        <android locatorType="xpath" locatorValue="//*[@text='Get exposure notifications']" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="shareCovidTestResult" >
+        <android locatorType="xpath" locatorValue="//*[@text='Share COVID-19 test results']" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="getCustomRecommendation" >
+        <android locatorType="xpath" locatorValue="//*[@text='Get custom recommendations']" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+
+    <object name="stopCommunitySpread" >
+        <android locatorType="xpath" locatorValue="//*[@text='Stop community spread']" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+
+    <object name="OKButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, '/btn_setup_complete_ok')]"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='How it Works']" />
+    </object>
+</objects>

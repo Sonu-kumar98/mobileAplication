@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="false" thread-count="5">
+
+<!--    <test name="TC005_CheckExposureNotification_Low" >-->
+<!--        <parameter name="dataID" value="TC005_CheckExposureNotification_Low"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.mobile.TC006_CheckExposureNotification_New2"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="TC005_CheckExposureNotification_High" >
+        <parameter name="dataID" value="TC005_CheckExposureNotification_High"/>
+        <classes>
+            <class name="com.impactqa.test.mobile.TC006_CheckExposureNotification_New2"/>
+        </classes>
+    </test>
+
+<!--    <test name="TC007_MobileAppSettings" >-->
+<!--        <parameter name="dataID" value="TC007_MobileAppSettings"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.mobile.TC007_MobileAppSettings"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--        <test name="TC007_MobileAppSettings" >-->
+<!--            <parameter name="dataID" value="TC007_MobileAppSettings"/>-->
+<!--            <classes>-->
+<!--                <class name="com.impactqa.test.mobile.Dummy"/>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+</suite>

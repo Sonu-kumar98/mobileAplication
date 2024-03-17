@@ -1,0 +1,20 @@
+<objects>
+
+    <object name="usernameTextbox" >
+        <web locatorType="id" locatorValue="email" />
+    </object>
+
+    <object name="passwordTextbox" >
+        <web locatorType="id" locatorValue="password" />
+    </object>
+
+    <object name="loginButton" >
+        <web locatorType="id" locatorValue="submit" />
+    </object>
+
+    <object name="loginErrorMessage" >
+        <web locatorType="xpath" locatorValue="//div[text()='Sign-in failed. Please try again.']" />
+    </object>
+    
+
+</objects>

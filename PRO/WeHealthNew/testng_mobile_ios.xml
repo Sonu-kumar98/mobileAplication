@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="false" thread-count="5">
+
+
+<!--    <test name="TC001_UninstallAllWeHealth_IOS" >-->
+<!--        <parameter name="platFormName" value="ios"/>-->
+<!--        <parameter name="appFileName" value="settings"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.mobile.TC001_UninstallAllWeHealth"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="TC002_FreshInstallPositiveCase_IOS" >-->
+<!--        <parameter name="dataID" value="TC002_FreshInstallPositiveCase_IOS"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.mobile.TC002_FreshInstallPositiveCase"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="TC003_FreshInstallNegativeCase_IOS" >
+        <parameter name="dataID" value="TC003_FreshInstallNegativeCase_IOS"/>
+        <classes>
+            <class name="com.impactqa.test.mobile.TC003_FreshInstallNegativeCase"/>
+        </classes>
+    </test>
+
+<!--    <test name="TC004_AnonymouslySharePositiveDiagnosis_IOS" >-->
+<!--        <parameter name="dataID" value="TC004_AnonymouslySharePositiveDiagnosis_IOS"/>-->
+<!--        <classes>-->
+<!--            <class name="com.impactqa.test.mobile.TC004_AnonymouslySharePositiveDiagnosis"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="TC005_CheckExposureNotification" >
+        <parameter name="dataID" value="TC005_CheckExposureNotification_Low"/>
+        <classes>
+            <class name="com.impactqa.test.mobile.TC006_CheckExposureNotification"/>
+        </classes>
+    </test>
+
+</suite>

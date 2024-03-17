@@ -1,0 +1,18 @@
+<objects>
+
+     <object name="getStartedButton" >
+		<android locatorType="xpath" locatorValue="//android.widget.Button[ends-with(@resource-id, 'id/btn_get_started')]" />
+		<ios locatorType="id" locatorValue="Get Started" />
+	</object>
+
+	 <object name="logo" >
+		<android locatorType="xpath" locatorValue="//android.widget.ImageView[ends-with(@resource-id, 'id/region_logo')]" />
+		<ios locatorType="id" locatorValue="Cool-looking WeHealth Logo" />
+	</object>
+
+	<object name="peopleConnectImage" >
+		<android locatorType="xpath" locatorValue="//android.widget.ImageView[ends-with(@resource-id, 'id/imageView2')]" />
+		<ios locatorType="id" locatorValue="SPLASH_IMAGE_ACCESSIBILITY_LABEL" />
+	</object>
+
+</objects>

@@ -1,0 +1,82 @@
+<objects>
+    <object name="anonymouslySharePositiveDiagnosisPageTitle" >
+        <android locatorType="xpath" locatorValue="//*[@text='Share a Positive Diagnosis']" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@label='Anonymously Share a Diagnosis']" />
+    </object>
+
+    <object name="closeButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/close_button')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Dismiss']" />
+    </object>
+<!--    <object name="closeButton" >-->
+<!--        <android locatorType="id" locatorValue="com.google.android.gms:id/alertTitle" />-->
+<!--        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Dismiss']" />-->
+<!--    </object>-->
+
+    <object name="enterVerificationCodeTextbox" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/et_verification_code')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeTextField[@name='ID_ENTER_CODE_TEXTFIELD']" />
+    </object>
+
+    <object name="selectSymptomsDate" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/et_symptoms_date')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='ID_SYPMTOMS_START_DATE_BUTTON']" />
+    </object>
+
+<!--    <object name="dynamicCalendarDay" >-->
+<!--        <android locatorType="xpath" locatorValue="//android.widget.TextView[ends-with(@content-desc, ', {{D}} {MMM}') or ends-with(@content-desc, ', {MMM} {{D}}') or ends-with(@content-desc, ', {{MMMM}} {{D}}, {{YYYY}}')]" />-->
+<!--        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='{{MMMM}} {{YYYY}}']/following-sibling::XCUIElementTypeStaticText[@name='{{D}}']" />-->
+<!--    </object>-->
+
+<!--    <object name="dynamicCalendarDay" >-->
+<!--        <android locatorType="xpath" locatorValue="//android.widget.TextView[ends-with(@content-desc, ', {{D}} {{MMM}}') or ends-with(@content-desc, ', {{D}}/{{MM}}') or ends-with(@content-desc, ', {{MMM}} {{D}}') or ends-with(@content-desc, ', {{MMMM}} {{D}}, {{YYYY}}')]" />-->
+<!--        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='{{MMMM}} {{YYYY}}']/following-sibling::XCUIElementTypeStaticText[@name='{{D}}']" />-->
+<!--    </object>-->
+
+    <object name="dynamicCalendarDay" >
+        <android locatorType="xpath" locatorValue="//android.widget.TextView[@text='{{D}}']"/>
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='{{MMMM}} {{YYYY}}']/following-sibling::XCUIElementTypeStaticText[@name='{{D}}']" />
+    </object>
+
+    <object name="calendarOkButton_Android" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/confirm_button')]" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="noSymptomsCheckbox" >
+        <android locatorType="xpath" locatorValue="//android.widget.CheckBox[ends-with(@resource-id, 'id/cb_no_symptoms')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='ID_NO_SYMPTOMS_CHECKBOX_BUTTON']" />
+    </object>
+
+    <object name="testedDate" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/et_tested_date')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='ID_TEST_START_DATE_BUTTON']" />
+    </object>
+
+    <object name="anonymouslyShareDiagnosisButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/btn_finish_verification')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Share Diagnosis']" />
+    </object>
+
+    <object name="shareButton" >
+        <android locatorType="xpath" locatorValue="//android.widget.Button[@resource-id='android:id/button1' and @text='Share' or @text ='Compartir'] " />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Share']" />
+    </object>
+
+    <object name="dontShareButton" >
+        <android locatorType="xpath" locatorValue="//android.widget.Button[@resource-id='android:id/button2' and @text=&quot;Don't share&quot;]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Don’t Share']" />
+    </object>
+
+    <object name="DiagnosisSharedTitle" >
+        <android locatorType="id" locatorValue="gov.azdhs.covidwatch.android.demo:id/title" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='ID_DIAGNOSES_SHARED_SCREEN_TITLE']" />
+    </object>
+
+
+    <object name="DiagnosisSharedThanksMessage" >
+        <android locatorType="id" locatorValue="gov.azdhs.covidwatch.android.demo:id/subtitle" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='ID_DIAGNOSES_SHARED_SUBTITLE']" />
+    </object>
+
+</objects>

@@ -1,0 +1,49 @@
+<objects>
+    <object name="PastDiagnosesTitle" >
+        <android locatorType="xpath" locatorValue="//*[@text='Shared Diagnoses']" />
+        <ios locatorType="xpath" locatorValue="//*[@label='My Past Positive Diagnoses']" />
+    </object>
+
+    <object name="expandArrow" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/expand_arrow')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Dismiss']" />
+    </object>
+
+    <object name="closeButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/close_button')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Dismiss']" />
+    </object>
+
+    <object name="noPastPositiveDiagnosesText" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/no_past_positive_diagnoses')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='No Past Diagnoses']" />
+    </object>
+
+    <object name="covidPositiveDiagnosesText" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/past_positive_diagnoses_list')]//*[ends-with(@resource-id, 'id/test_status_text')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[starts-with(@name, 'Verified COVID-19 Positive, Submit Date:')]" />
+    </object>
+
+
+
+    <object name="covidPositiveDiagnosesDetails" >
+        <android locatorType="" locatorValue="" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[contains(@name, '• Symptoms Start Date:')]" />
+    </object>
+
+    <object name="covidPositiveDiagnosesDetailsSubmitDate_Android" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/submit_date')]" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="covidPositiveDiagnosesDetailsSymptomsDate_Android" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/symptoms_date')]" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="covidPositiveDiagnosesDetailsTestDate_Android" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/test_date')]" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+</objects>

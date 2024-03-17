@@ -1,0 +1,92 @@
+<objects>
+    <object name="daysSinceSymptomsTextbox" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/days_since_symptoms')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeAlert[@name='[DEMO] Export Exposure Keys']//XCUIElementTypeTextField" />
+    </object>
+
+    <object name="continueButton" >
+        <android locatorType="xpath" locatorValue="//*[ends-with(@resource-id, 'id/button1')]" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeAlert[@name='[DEMO] Export Exposure Keys']//XCUIElementTypeButton[@name='Continue']" />
+    </object>
+
+    <object name="alertPopupTitle" >
+        <android locatorType="id" locatorValue="com.google.android.gms:id/alertTitle" />
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='Share Info to Notify Others?']" />
+    </object>
+
+<!--    <object name="alertPopupMessage" >-->
+<!--        <android locatorType="id" locatorValue="android:id/message" />-->
+<!--        <ios locatorType="" locatorValue="" />-->
+<!--    </object>-->
+
+    <object name="alertPopupShareButton" >
+       <android locatorType="xpath" locatorValue="//*[@resource-id='android:id/button1'][@text='Share']" />
+<!--        <android locatorType="xpath" locatorValue="//*[@resource-id='android:id/button1'][@text='Compartir']" />-->
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Share']" />
+    </object>
+
+    <!--    Android-->
+// ShowRoots
+    <object name="showRoots" >
+        <android locatorType="xpath" locatorValue="//android.widget.ImageButton[@content-desc='Show roots']" />
+<!--        <android locatorType="xpath" locatorValue="//android.widget.ImageButton[@content-desc='Mostrar raízes']" />-->
+<!--        <android locatorType="xpath" locatorValue="//android.widget.ImageButton[@content-desc='Mostrar raíces']" />-->
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="downloadsRootOption" >
+        <android locatorType="xpath" locatorValue="//*[@resource-id='android:id/title'][@text='Downloads']" />
+<!--        <android locatorType="xpath" locatorValue="//*[@resource-id='android:id/title'][@text='Transferências']" />-->
+<!--        <android locatorType="xpath" locatorValue="//*[@resource-id='android:id/title'][@text='Descargas']" />-->
+        <ios locatorType="" locatorValue="" />
+        //TRANSFERÊNCIAS
+    </object>
+
+    <object name="fileNameTextbox" >
+        <android locatorType="xpath" locatorValue="//android.widget.EditText[@resource-id='android:id/title']" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <object name="saveButton" >
+        <android locatorType="xpath" locatorValue="//android.widget.Button[@resource-id='android:id/button1']" />
+        <ios locatorType="" locatorValue="" />
+    </object>
+
+    <!--    IOS-->
+
+    <object name="saveToFilesButton" >
+        <ios locatorType="xpath" locatorValue="(//XCUIElementTypeCell[@name='Copy']/following-sibling::XCUIElementTypeCell) | (//XCUIElementTypeButton[@name='Save to Files'])" />
+        <android locatorType="" locatorValue="" />
+    </object>
+
+    <object name="KeynoteLocationIcontext" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeStaticText[@name='Keynote']" />
+        <android locatorType="" locatorValue="" />
+    </object>
+
+    <object name="renameButton" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeNavigationBar[contains(@name, 'DOCServiceTargetSelectionBrowserView')]/XCUIElementTypeButton[last()]" />
+        <android locatorType="" locatorValue="" />
+    </object>
+
+    <object name="renameDocumentTitle" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeNavigationBar[@name='Rename Document']" />
+        <android locatorType="" locatorValue="" />
+    </object>
+
+    <object name="fileNameTextboxIOS" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeTextField[@name='Folder name']" />
+        <android locatorType="" locatorValue="" />
+    </object>
+
+    <object name="doneButton" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeNavigationBar[@name='Rename Document']//XCUIElementTypeButton[@name='Done']" />
+        <android locatorType="" locatorValue="" />
+    </object>
+
+    <object name="saveButtonIOS" >
+        <ios locatorType="xpath" locatorValue="//XCUIElementTypeButton[@name='Save']" />
+        <android locatorType="" locatorValue="" />
+    </object>
+
+</objects>
